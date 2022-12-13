@@ -11,6 +11,6 @@ Indicates the status for printing.
 
 | Name |  Value | Description |
 |--|--|--|
-|`Succeeded` | 0x0  |  Indicates that the print operation is succedded.|
+|`Succeeded` | 0x0  |  Indicates that the print operation is succeeded.|
 |`PrinterUnavailable` | 0x1  |  Indicates that the printer is not available.|
 |`OtherError` | 0x2  |  Indicates that the print operation is failed.|

@@ -26,7 +26,7 @@ Indicates the error status values for web navigations.
 |`CannotConnect` | 0xc  |  Indicates that a connection to the destination was not established.|
 |`HostNameNotResolved` | 0xd  |  Indicates that the provided host name was not able to be resolved.|
 |`OperationCanceled` | 0xe  |  Indicates that the operation was canceled. This status code is also used in the following cases:
-- When the app canceles a navigation via NavigationStarting event.
+- When the app cancels a navigation via NavigationStarting event.
 - For original navigation if the app navigates the WebView2 in a rapid succession away after the load for original navigation commenced, but before it completed.|
 |`RedirectFailed` | 0xf  |  Indicates that the request redirect failed.|
 |`UnexpectedError` | 0x10  |  An unexpected error occurred.|

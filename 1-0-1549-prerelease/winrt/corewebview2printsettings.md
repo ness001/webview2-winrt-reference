@@ -161,7 +161,7 @@ If the `start page` is not present, then 1 is used as the `start page`.
 The `last page` must be larger than the `start page`.
 If the `last page` is not present, then the document total page count is used as the `last page`.
 
-Repeating a page does not print it multiple times. To print multiple times, use the `Copies` property.
+Repeating a page does not print it multiple times. To print multiple times, use the [CoreWebView2PrintSettings.Copies](corewebview2printsettings.md#copies) property.
 
 The pages are always printed in ascending order, even if specified in non-ascending order.
 
