@@ -597,8 +597,13 @@ Share a shared buffer object with script of the main frame in the WebView.
 The script will receive a `sharedbufferreceived` event from chrome.webview.
 The event arg for that event will have the following methods and properties.
 
+| Property | Description |
+|---|---|
+| getBuffer() | A method that returns an ArrayBuffer object with the backing content from the shared buffer. |
+| additionalData | An object as the result of parsing `additionalDataAsJson` as JSON string. This property will be `undefined` if `additionalDataAsJson` is nullptr or empty string. |
+| source | With a value set as `chrome.webview` object. |
 
-If `access` is [CoreWebView2SharedBufferAccess.ReadOnly](corewebview2sharedbufferaccess.md), the script will only have read access to the buffer.
+If `access` is [CoreWebView2SharedBufferAccess](corewebview2sharedbufferaccess.md).ReadOnly, the script will only have read access to the buffer.
 If the script tries to modify the content in a read only buffer, it will cause an access violation in WebView renderer process and crash the renderer process.
 
 If the shared buffer is already closed, the API throws COMException with error code of `RO_E_CLOSED`.
@@ -610,8 +615,7 @@ The underlying shared memory will be released when all the views are released.
 
 Sharing a buffer to script has security risk. You should only share buffer with trusted site.
 If a buffer is shared to a untrusted site, possible sensitive information could be leaked.
-If a buffer is shared as modifiable by the script and the script modifies it in an unexpected way,
-it could result in corrupted data that might even crash the application.
+If a buffer is shared as modifiable by the script and the script modifies it in an unexpected way, it could result in corrupted data that might even crash the application.
 
 The example code shows how to send data to script for one time read only consumption.
 :::code language="csharp" source="../code/sample/SampleApps/WebView2WpfBrowser/MainWindow.xaml.cs" id="OneTimeShareBuffer":::

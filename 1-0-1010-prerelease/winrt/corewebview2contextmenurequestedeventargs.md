@@ -18,7 +18,7 @@ Members|Description
 --|--
 [ContextMenuTarget](#contextmenutarget) | Gets the target information associated with the requested context menu.
 [Handled](#handled) | Gets or sets whether the [CoreWebView2.ContextMenuRequested](corewebview2.md#contextmenurequested) event is handled by host after the event handler completes or if there is a taken Deferral then after the deferral is completed. If Handled is set to `true` then WebView2 will not display a context menu and will instead use the [CoreWebView2ContextMenuRequestedEventArgs.SelectedCommandId](corewebview2contextmenurequestedeventargs.md#selectedcommandid) property to indicate which, if any, context menu item to invoke. If after the event handler or deferral completes, Handled is set to `false` then WebView will display a context menu based on the contents of the [CoreWebView2ContextMenuRequestedEventArgs.MenuItems](corewebview2contextmenurequestedeventargs.md#menuitems) property.
-[Location](#location) | Gets the coordinates where the context menu request occured in relation to the upper left corner of the WebView bounds.
+[Location](#location) | Gets the coordinates where the context menu request occurred in relation to the upper left corner of the WebView bounds.
 [MenuItems](#menuitems) | Gets the collection of [CoreWebView2ContextMenuItem](corewebview2contextmenuitem.md) objects.
 [SelectedCommandId](#selectedcommandid) | Gets or sets the selected command for the WebView to execute. The value is obtained via the [CoreWebView2ContextMenuItem.CommandId](corewebview2contextmenuitem.md#commandid) property.
 [GetDeferral](#getdeferral) | Returns a Deferral object. Use this operation to complete the event when the custom context menu is closed.
@@ -42,7 +42,7 @@ The default value is `false`.
 
 > readonly  [Point](/uwp/api/Windows.Foundation.Point) Location
 
-Gets the coordinates where the context menu request occured in relation to the upper left corner of the WebView bounds.
+Gets the coordinates where the context menu request occurred in relation to the upper left corner of the WebView bounds.
 
 ### MenuItems
 
@@ -55,7 +55,7 @@ Gets the collection of [CoreWebView2ContextMenuItem](corewebview2contextmenuitem
 >  int SelectedCommandId
 
 Gets or sets the selected command for the WebView to execute. The value is obtained via the [CoreWebView2ContextMenuItem.CommandId](corewebview2contextmenuitem.md#commandid) property.
-This value should always be from context menu items for the relevant context menu and event arg. Attempting to mix will result in invalid outputs. The default value is -1 which means that no selected occured.
+This value should always be from context menu items for the relevant context menu and event arg. Attempting to mix will result in invalid outputs. The default value is -1 which means that no selected occurred.
 
 
 

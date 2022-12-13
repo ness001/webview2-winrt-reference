@@ -18,7 +18,7 @@ Members|Description
 --|--
 [ContextMenuTarget](#contextmenutarget) | Gets the target information associated with the requested context menu.
 [Handled](#handled) | Gets or sets whether the [CoreWebView2.ContextMenuRequested](corewebview2.md#contextmenurequested) event is handled by host after the event handler completes or after the deferral is completed if there is a taken Deferral.
-[Location](#location) | Gets the coordinates where the context menu request occured in relation to the upper left corner of the WebView bounds.
+[Location](#location) | Gets the coordinates where the context menu request occurred in relation to the upper left corner of the WebView bounds.
 [MenuItems](#menuitems) | Gets the collection of [CoreWebView2ContextMenuItem](corewebview2contextmenuitem.md) objects.
 [SelectedCommandId](#selectedcommandid) | Gets or sets the selected [CoreWebView2ContextMenuItem](corewebview2contextmenuitem.md)'s [CoreWebView2ContextMenuItem.CommandId](corewebview2contextmenuitem.md#commandid).
 [GetDeferral](#getdeferral) | Returns a Deferral object.
@@ -42,7 +42,7 @@ If Handled is set to `true` then WebView2 will not display a context menu and wi
 
 > readonly  [Point](/uwp/api/Windows.Foundation.Point) Location
 
-Gets the coordinates where the context menu request occured in relation to the upper left corner of the WebView bounds.
+Gets the coordinates where the context menu request occurred in relation to the upper left corner of the WebView bounds.
 
 ### MenuItems
 

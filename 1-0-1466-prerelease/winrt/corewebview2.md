@@ -597,6 +597,11 @@ Share a shared buffer object with script of the main frame in the WebView.
 The script will receive a `sharedbufferreceived` event from chrome.webview.
 The event arg for that event will have the following methods and properties.
 
+| Property | Description |
+|---|---|
+| getBuffer() | A method that returns an ArrayBuffer object with the backing content from the shared buffer. |
+| additionalData | An object as the result of parsing `additionalDataAsJson` as JSON string. This property will be `undefined` if `additionalDataAsJson` is nullptr or empty string. |
+| source | With a value set as `chrome.webview` object. |
 
 If `access` is [CoreWebView2SharedBufferAccess.ReadOnly](corewebview2sharedbufferaccess.md), the script will only have read access to the buffer.
 If the script tries to modify the content in a read only buffer, it will cause an access violation in WebView renderer process and crash the renderer process.
