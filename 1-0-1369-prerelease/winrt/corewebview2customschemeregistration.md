@@ -50,10 +50,12 @@ Set this property to `true` if the URIs with this custom
 scheme will have an authority component (a host for custom schemes).
 Specifically, if you have a URI of the following form you should set the
 `HasAuthorityComponent` value as listed.
+
 | URI | Recommended HasAuthorityComponent value |
 | -- | -- |
 | `custom-scheme-with-authority://host/path` | `true` |
 | `custom-scheme-without-authority:path` | `false` |
+
 When this property is set to `true`, the URIs with this scheme will be
 interpreted as having a
 [scheme and host](https://html.spec.whatwg.org/multipage/origin.html#concept-origin-tuple)
