@@ -1,8 +1,36 @@
 ---
 description: The window features for a WebView popup window.
 title: CoreWebView2WindowFeatures
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WindowFeatures
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.HasPosition
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.HasSize
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.Height
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.Left
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.ShouldDisplayMenuBar
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.ShouldDisplayScrollBars
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.ShouldDisplayStatus
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.ShouldDisplayToolbar
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.Top
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.Width
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_HasPosition
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_HasSize
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_Height
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_Left
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_ShouldDisplayMenuBar
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_ShouldDisplayScrollBars
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_ShouldDisplayStatus
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_ShouldDisplayToolbar
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_Top
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_Width
 ---
 
 # CoreWebView2WindowFeatures Class

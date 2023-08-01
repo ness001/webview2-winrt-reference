@@ -1,8 +1,34 @@
 ---
 description: Event args for the CoreWebView2.NavigationStarting event.
 title: CoreWebView2NavigationStartingEventArgs
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2NavigationStartingEventArgs
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.AdditionalAllowedFrameAncestors
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.IsRedirected
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.IsUserInitiated
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.NavigationId
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.NavigationKind
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.RequestHeaders
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_AdditionalAllowedFrameAncestors
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_IsRedirected
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_IsUserInitiated
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_NavigationId
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_NavigationKind
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_RequestHeaders
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.put_AdditionalAllowedFrameAncestors
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.put_Cancel
 ---
 
 # CoreWebView2NavigationStartingEventArgs Class

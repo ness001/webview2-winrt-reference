@@ -1,8 +1,29 @@
 ---
 description: Event args for the CoreWebView2.ContextMenuRequested event.
 title: CoreWebView2ContextMenuRequestedEventArgs
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContextMenuRequestedEventArgs
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.ContextMenuTarget
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.Location
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.MenuItems
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.SelectedCommandId
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.GetDeferral
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.get_ContextMenuTarget
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.get_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.get_Location
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.get_MenuItems
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.get_SelectedCommandId
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.put_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.put_SelectedCommandId
 ---
 
 # CoreWebView2ContextMenuRequestedEventArgs Class

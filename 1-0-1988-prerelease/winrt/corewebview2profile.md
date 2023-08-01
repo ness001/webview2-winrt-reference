@@ -1,8 +1,50 @@
 ---
 description: Multiple profiles can be created under a single user data directory but with separated cookies, user preference settings, and various data storage etc.. If the CoreWebView2 was created with a CoreWebView2ControllerOptions, the CoreWebView2Profile will match those specified options. Otherwise if this CoreWebView2 was created without a CoreWebView2ControllerOptions, then this will be the default CoreWebView2Profile for the corresponding CoreWebView2Environment.
 title: CoreWebView2Profile
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Profile
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.CookieManager
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.DefaultDownloadFolderPath
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsGeneralAutofillEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsInPrivateModeEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsPasswordAutosaveEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredColorScheme
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredTrackingPreventionLevel
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfileName
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfilePath
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.AddBrowserExtensionAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearCustomDataPartitionAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.Delete
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.SetPermissionStateAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.add_Deleted
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.get_CookieManager
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.get_DefaultDownloadFolderPath
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.get_IsGeneralAutofillEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.get_IsInPrivateModeEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.get_IsPasswordAutosaveEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.get_PreferredColorScheme
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.get_PreferredTrackingPreventionLevel
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.get_ProfileName
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.get_ProfilePath
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.put_DefaultDownloadFolderPath
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.put_IsGeneralAutofillEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.put_IsPasswordAutosaveEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.put_PreferredColorScheme
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.put_PreferredTrackingPreventionLevel
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.remove_Deleted
+- Microsoft.Web.WebView2.Core.CoreWebView2Profile.Deleted
 ---
 
 # CoreWebView2Profile Class

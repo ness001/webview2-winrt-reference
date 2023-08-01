@@ -1,8 +1,36 @@
 ---
 description: Event args for the CoreWebView2.ClientCertificateRequested event.
 title: CoreWebView2ClientCertificateRequestedEventArgs
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ClientCertificateRequestedEventArgs
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.AllowedCertificateAuthorities
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.Host
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.IsProxy
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.MutuallyTrustedCertificates
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.Port
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.SelectedCertificate
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.GetDeferral
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.get_AllowedCertificateAuthorities
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.get_Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.get_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.get_Host
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.get_IsProxy
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.get_MutuallyTrustedCertificates
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.get_Port
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.get_SelectedCertificate
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.put_Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.put_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs.put_SelectedCertificate
 ---
 
 # CoreWebView2ClientCertificateRequestedEventArgs Class

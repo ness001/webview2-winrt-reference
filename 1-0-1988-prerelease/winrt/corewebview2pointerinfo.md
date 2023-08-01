@@ -1,8 +1,100 @@
 ---
 description: This mostly represents a combined win32 `POINTER_INFO`, `POINTER_TOUCH_INFO`, and `POINTER_PEN_INFO` object.
 title: CoreWebView2PointerInfo
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PointerInfo
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.ButtonChangeKind
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.DisplayRect
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.FrameId
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.HimetricLocation
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.HimetricLocationRaw
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.HistoryCount
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.InputData
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.KeyStates
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.PenFlags
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.PenMask
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.PenPressure
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.PenRotation
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.PenTiltX
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.PenTiltY
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.PerformanceCount
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.PixelLocation
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.PixelLocationRaw
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.PointerDeviceRect
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.PointerFlags
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.PointerId
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.PointerKind
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.Time
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.TouchContact
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.TouchContactRaw
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.TouchFlags
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.TouchMask
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.TouchOrientation
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.TouchPressure
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_ButtonChangeKind
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_DisplayRect
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_FrameId
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_HimetricLocation
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_HimetricLocationRaw
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_HistoryCount
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_InputData
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_KeyStates
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_PenFlags
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_PenMask
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_PenPressure
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_PenRotation
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_PenTiltX
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_PenTiltY
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_PerformanceCount
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_PixelLocation
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_PixelLocationRaw
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_PointerDeviceRect
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_PointerFlags
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_PointerId
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_PointerKind
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_Time
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_TouchContact
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_TouchContactRaw
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_TouchFlags
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_TouchMask
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_TouchOrientation
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.get_TouchPressure
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_ButtonChangeKind
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_DisplayRect
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_FrameId
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_HimetricLocation
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_HimetricLocationRaw
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_HistoryCount
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_InputData
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_KeyStates
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_PenFlags
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_PenMask
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_PenPressure
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_PenRotation
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_PenTiltX
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_PenTiltY
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_PerformanceCount
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_PixelLocation
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_PixelLocationRaw
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_PointerDeviceRect
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_PointerFlags
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_PointerId
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_PointerKind
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_Time
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_TouchContact
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_TouchContactRaw
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_TouchFlags
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_TouchMask
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_TouchOrientation
+- Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.put_TouchPressure
 ---
 
 # CoreWebView2PointerInfo Class

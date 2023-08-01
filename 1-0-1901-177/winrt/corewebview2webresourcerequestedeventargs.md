@@ -1,8 +1,24 @@
 ---
 description: Event args for the CoreWebView2.WebResourceRequested event.
 title: CoreWebView2WebResourceRequestedEventArgs
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebResourceRequestedEventArgs
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.Request
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.ResourceContext
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.Response
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.GetDeferral
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.get_Request
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.get_ResourceContext
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.get_Response
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.put_Response
 ---
 
 # CoreWebView2WebResourceRequestedEventArgs Class

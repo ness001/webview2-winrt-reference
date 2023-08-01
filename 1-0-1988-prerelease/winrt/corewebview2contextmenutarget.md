@@ -1,8 +1,42 @@
 ---
 description: Represents the information regarding the context menu target. Includes the context selected and the appropriate data used for the actions of a context menu.
 title: CoreWebView2ContextMenuTarget
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContextMenuTarget
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.FrameUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.HasLinkText
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.HasLinkUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.HasSelection
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.HasSourceUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.IsEditable
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.IsRequestedForMainFrame
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.Kind
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.LinkText
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.LinkUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.PageUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.SelectionText
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.SourceUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_FrameUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_HasLinkText
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_HasLinkUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_HasSelection
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_HasSourceUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_IsEditable
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_IsRequestedForMainFrame
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_Kind
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_LinkText
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_LinkUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_PageUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_SelectionText
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_SourceUri
 ---
 
 # CoreWebView2ContextMenuTarget Class
