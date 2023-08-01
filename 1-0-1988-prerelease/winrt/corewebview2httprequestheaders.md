@@ -1,8 +1,22 @@
 ---
 description: HTTP request headers.
 title: CoreWebView2HttpRequestHeaders
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2HttpRequestHeaders
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpRequestHeaders
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpRequestHeaders.Contains
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpRequestHeaders.First
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpRequestHeaders.GetHeader
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpRequestHeaders.GetHeaders
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpRequestHeaders.RemoveHeader
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpRequestHeaders.SetHeader
 ---
 
 # CoreWebView2HttpRequestHeaders Class

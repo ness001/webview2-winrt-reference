@@ -1,8 +1,41 @@
 ---
 description: CoreWebView2 Texture Stream.
 title: CoreWebView2TextureStream
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2TextureStream
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.Id
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.AddAllowedOrigin
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.CloseTexture
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.CreateTexture
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.GetAvailableTexture
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.PresentTexture
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.RemoveAllowedOrigin
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.SetD3DDevice
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.Stop
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.add_ErrorReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.add_StartRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.add_Stopped
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.add_WebTextureReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.add_WebTextureStreamStopped
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.get_Id
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.remove_ErrorReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.remove_StartRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.remove_Stopped
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.remove_WebTextureReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.remove_WebTextureStreamStopped
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.ErrorReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.StartRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.Stopped
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.WebTextureReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStream.WebTextureStreamStopped
 ---
 
 # CoreWebView2TextureStream Class

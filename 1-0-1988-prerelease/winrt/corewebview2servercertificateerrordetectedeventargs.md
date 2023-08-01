@@ -1,8 +1,26 @@
 ---
 description: Event args for the CoreWebView2.ServerCertificateErrorDetected event.
 title: CoreWebView2ServerCertificateErrorDetectedEventArgs
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ServerCertificateErrorDetectedEventArgs
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.Action
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.ErrorStatus
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.RequestUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.ServerCertificate
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.GetDeferral
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.get_Action
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.get_ErrorStatus
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.get_RequestUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.get_ServerCertificate
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.put_Action
 ---
 
 # CoreWebView2ServerCertificateErrorDetectedEventArgs Class

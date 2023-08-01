@@ -1,8 +1,39 @@
 ---
 description: Represents a context menu item of a context menu displayed by WebView.
 title: CoreWebView2ContextMenuItem
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContextMenuItem
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.Children
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.CommandId
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.Icon
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.IsChecked
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.IsEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.Kind
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.Label
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.Name
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.ShortcutKeyDescription
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.add_CustomItemSelected
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_Children
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_CommandId
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_Icon
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_IsChecked
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_IsEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_Kind
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_Label
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_Name
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_ShortcutKeyDescription
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.put_IsChecked
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.put_IsEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.remove_CustomItemSelected
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.CustomItemSelected
 ---
 
 # CoreWebView2ContextMenuItem Class

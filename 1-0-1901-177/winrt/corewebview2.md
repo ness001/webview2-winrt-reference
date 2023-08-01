@@ -1,8 +1,183 @@
 ---
 description: WebView2 enables you to host web content using the latest Microsoft Edge browser and web technology.
 title: CoreWebView2
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2
+- Microsoft.Web.WebView2.Core.CoreWebView2.BrowserProcessId
+- Microsoft.Web.WebView2.Core.CoreWebView2.CanGoBack
+- Microsoft.Web.WebView2.Core.CoreWebView2.CanGoForward
+- Microsoft.Web.WebView2.Core.CoreWebView2.ContainsFullScreenElement
+- Microsoft.Web.WebView2.Core.CoreWebView2.CookieManager
+- Microsoft.Web.WebView2.Core.CoreWebView2.DefaultDownloadDialogCornerAlignment
+- Microsoft.Web.WebView2.Core.CoreWebView2.DefaultDownloadDialogMargin
+- Microsoft.Web.WebView2.Core.CoreWebView2.DocumentTitle
+- Microsoft.Web.WebView2.Core.CoreWebView2.Environment
+- Microsoft.Web.WebView2.Core.CoreWebView2.FaviconUri
+- Microsoft.Web.WebView2.Core.CoreWebView2.IsDefaultDownloadDialogOpen
+- Microsoft.Web.WebView2.Core.CoreWebView2.IsDocumentPlayingAudio
+- Microsoft.Web.WebView2.Core.CoreWebView2.IsMuted
+- Microsoft.Web.WebView2.Core.CoreWebView2.IsSuspended
+- Microsoft.Web.WebView2.Core.CoreWebView2.MemoryUsageTargetLevel
+- Microsoft.Web.WebView2.Core.CoreWebView2.Profile
+- Microsoft.Web.WebView2.Core.CoreWebView2.Settings
+- Microsoft.Web.WebView2.Core.CoreWebView2.Source
+- Microsoft.Web.WebView2.Core.CoreWebView2.StatusBarText
+- Microsoft.Web.WebView2.Core.CoreWebView2.AddHostObjectToScript
+- Microsoft.Web.WebView2.Core.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2.AddWebResourceRequestedFilter
+- Microsoft.Web.WebView2.Core.CoreWebView2.CallDevToolsProtocolMethodAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2.CallDevToolsProtocolMethodForSessionAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2.CapturePreviewAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2.ClearServerCertificateErrorActionsAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2.ClearVirtualHostNameToFolderMapping
+- Microsoft.Web.WebView2.Core.CoreWebView2.CloseDefaultDownloadDialog
+- Microsoft.Web.WebView2.Core.CoreWebView2.ExecuteScriptAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2.GetDevToolsProtocolEventReceiver
+- Microsoft.Web.WebView2.Core.CoreWebView2.GetFaviconAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2.GoBack
+- Microsoft.Web.WebView2.Core.CoreWebView2.GoForward
+- Microsoft.Web.WebView2.Core.CoreWebView2.Navigate
+- Microsoft.Web.WebView2.Core.CoreWebView2.NavigateToString
+- Microsoft.Web.WebView2.Core.CoreWebView2.NavigateWithWebResourceRequest
+- Microsoft.Web.WebView2.Core.CoreWebView2.OpenDefaultDownloadDialog
+- Microsoft.Web.WebView2.Core.CoreWebView2.OpenDevToolsWindow
+- Microsoft.Web.WebView2.Core.CoreWebView2.OpenTaskManagerWindow
+- Microsoft.Web.WebView2.Core.CoreWebView2.PostSharedBufferToScript
+- Microsoft.Web.WebView2.Core.CoreWebView2.PostWebMessageAsJson
+- Microsoft.Web.WebView2.Core.CoreWebView2.PostWebMessageAsString
+- Microsoft.Web.WebView2.Core.CoreWebView2.PrintAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2.PrintToPdfAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2.PrintToPdfStreamAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2.Reload
+- Microsoft.Web.WebView2.Core.CoreWebView2.RemoveHostObjectFromScript
+- Microsoft.Web.WebView2.Core.CoreWebView2.RemoveScriptToExecuteOnDocumentCreated
+- Microsoft.Web.WebView2.Core.CoreWebView2.RemoveWebResourceRequestedFilter
+- Microsoft.Web.WebView2.Core.CoreWebView2.Resume
+- Microsoft.Web.WebView2.Core.CoreWebView2.SetVirtualHostNameToFolderMapping
+- Microsoft.Web.WebView2.Core.CoreWebView2.ShowPrintUI
+- Microsoft.Web.WebView2.Core.CoreWebView2.Stop
+- Microsoft.Web.WebView2.Core.CoreWebView2.TrySuspendAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_BasicAuthenticationRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_ClientCertificateRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_ContainsFullScreenElementChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_ContentLoading
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_ContextMenuRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_DOMContentLoaded
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_DocumentTitleChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_DownloadStarting
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_FaviconChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_FrameCreated
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_FrameNavigationCompleted
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_FrameNavigationStarting
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_HistoryChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_IsDefaultDownloadDialogOpenChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_IsDocumentPlayingAudioChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_IsMutedChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_LaunchingExternalUriScheme
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_NavigationCompleted
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_NavigationStarting
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_NewWindowRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_PermissionRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_ProcessFailed
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_ScriptDialogOpening
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_ServerCertificateErrorDetected
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_SourceChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_StatusBarTextChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_WebMessageReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_WebResourceRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_WebResourceResponseReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2.add_WindowCloseRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_BrowserProcessId
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_CanGoBack
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_CanGoForward
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_ContainsFullScreenElement
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_CookieManager
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_DefaultDownloadDialogCornerAlignment
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_DefaultDownloadDialogMargin
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_DocumentTitle
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_Environment
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_FaviconUri
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_IsDefaultDownloadDialogOpen
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_IsDocumentPlayingAudio
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_IsMuted
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_IsSuspended
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_MemoryUsageTargetLevel
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_Profile
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_Settings
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_Source
+- Microsoft.Web.WebView2.Core.CoreWebView2.get_StatusBarText
+- Microsoft.Web.WebView2.Core.CoreWebView2.put_DefaultDownloadDialogCornerAlignment
+- Microsoft.Web.WebView2.Core.CoreWebView2.put_DefaultDownloadDialogMargin
+- Microsoft.Web.WebView2.Core.CoreWebView2.put_IsMuted
+- Microsoft.Web.WebView2.Core.CoreWebView2.put_MemoryUsageTargetLevel
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_BasicAuthenticationRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_ClientCertificateRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_ContainsFullScreenElementChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_ContentLoading
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_ContextMenuRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_DOMContentLoaded
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_DocumentTitleChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_DownloadStarting
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_FaviconChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_FrameCreated
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_FrameNavigationCompleted
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_FrameNavigationStarting
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_HistoryChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_IsDefaultDownloadDialogOpenChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_IsDocumentPlayingAudioChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_IsMutedChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_LaunchingExternalUriScheme
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_NavigationCompleted
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_NavigationStarting
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_NewWindowRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_PermissionRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_ProcessFailed
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_ScriptDialogOpening
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_ServerCertificateErrorDetected
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_SourceChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_StatusBarTextChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_WebMessageReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_WebResourceRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_WebResourceResponseReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2.remove_WindowCloseRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.BasicAuthenticationRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.ClientCertificateRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.ContainsFullScreenElementChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.ContentLoading
+- Microsoft.Web.WebView2.Core.CoreWebView2.ContextMenuRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.DOMContentLoaded
+- Microsoft.Web.WebView2.Core.CoreWebView2.DocumentTitleChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.DownloadStarting
+- Microsoft.Web.WebView2.Core.CoreWebView2.FaviconChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.FrameCreated
+- Microsoft.Web.WebView2.Core.CoreWebView2.FrameNavigationCompleted
+- Microsoft.Web.WebView2.Core.CoreWebView2.FrameNavigationStarting
+- Microsoft.Web.WebView2.Core.CoreWebView2.HistoryChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.IsDefaultDownloadDialogOpenChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.IsDocumentPlayingAudioChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.IsMutedChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.LaunchingExternalUriScheme
+- Microsoft.Web.WebView2.Core.CoreWebView2.NavigationCompleted
+- Microsoft.Web.WebView2.Core.CoreWebView2.NavigationStarting
+- Microsoft.Web.WebView2.Core.CoreWebView2.NewWindowRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.PermissionRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.ProcessFailed
+- Microsoft.Web.WebView2.Core.CoreWebView2.ScriptDialogOpening
+- Microsoft.Web.WebView2.Core.CoreWebView2.ServerCertificateErrorDetected
+- Microsoft.Web.WebView2.Core.CoreWebView2.SourceChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.StatusBarTextChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2.WebMessageReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2.WebResourceRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2.WebResourceResponseReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2.WindowCloseRequested
 ---
 
 # CoreWebView2 Class
@@ -139,14 +314,14 @@ Gets the [CoreWebView2CookieManager](corewebview2cookiemanager.md) object associ
 >  [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md) DefaultDownloadDialogCornerAlignment
 
 The default download dialog corner alignment.
-The dialog can be aligned to any of the WebView corners (see [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md)). When the WebView or dialog changes size, the dialog keeps it position relative to the corner. The dialog may become partially or completely outside of the WebView bounds if the WebView is small enough. Set the margin from the corner with the [CoreWebView2.DefaultDownloadDialogMargin](corewebview2.md#defaultdownloaddialogmargin) property. The corner alignment and margin should be set during initialization to ensure that they are correcly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
+The dialog can be aligned to any of the WebView corners (see [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md)). When the WebView or dialog changes size, the dialog keeps it position relative to the corner. The dialog may become partially or completely outside of the WebView bounds if the WebView is small enough. Set the margin from the corner with the [CoreWebView2.DefaultDownloadDialogMargin](corewebview2.md#defaultdownloaddialogmargin) property. The corner alignment and margin should be set during initialization to ensure that they are correctly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
 
 ### DefaultDownloadDialogMargin
 
 >  [Point](/uwp/api/Windows.Foundation.Point) DefaultDownloadDialogMargin
 
 The default download dialog margin relative to the WebView corner specified by [CoreWebView2.DefaultDownloadDialogCornerAlignment](corewebview2.md#defaultdownloaddialogcorneralignment).
-The margin is a point that describes the vertical and horizontal distances between the chosen WebView corner and the default download dialog corner nearest to it. Positive values move the dialog towards the center of the WebView from the chosen WebView corner, and negative values move the dialog away from it. Use (0, 0) to align the dialog to the WebView corner with no margin. The corner alignment and margin should be set during initialization to ensure that they are correcly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
+The margin is a point that describes the vertical and horizontal distances between the chosen WebView corner and the default download dialog corner nearest to it. Positive values move the dialog towards the center of the WebView from the chosen WebView corner, and negative values move the dialog away from it. Use (0, 0) to align the dialog to the WebView corner with no margin. The corner alignment and margin should be set during initialization to ensure that they are correctly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
 
 ### DocumentTitle
 

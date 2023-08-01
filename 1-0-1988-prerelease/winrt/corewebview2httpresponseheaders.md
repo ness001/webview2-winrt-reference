@@ -1,8 +1,21 @@
 ---
 description: HTTP response headers.
 title: CoreWebView2HttpResponseHeaders
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2HttpResponseHeaders
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpResponseHeaders
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpResponseHeaders.AppendHeader
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpResponseHeaders.Contains
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpResponseHeaders.First
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpResponseHeaders.GetHeader
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpResponseHeaders.GetHeaders
 ---
 
 # CoreWebView2HttpResponseHeaders Class

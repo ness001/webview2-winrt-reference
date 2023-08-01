@@ -1,8 +1,69 @@
 ---
 description: The owner of the CoreWebView2 object that provides support for resizing, showing and hiding, focusing, and other functionality related to windowing and composition.
 title: CoreWebView2Controller
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Controller
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.AllowExternalDrop
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.Bounds
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.BoundsMode
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.CoreWebView2
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.DefaultBackgroundColor
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.IsBrowserHitTransparent
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.IsVisible
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.ParentWindow
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.RasterizationScale
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.ShouldDetectMonitorScaleChanges
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.ZoomFactor
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.Close
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.MoveFocus
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.NotifyParentWindowPositionChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.SetBoundsAndZoomFactor
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.add_AcceleratorKeyPressed
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.add_GotFocus
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.add_LostFocus
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.add_MoveFocusRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.add_RasterizationScaleChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.add_ZoomFactorChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.get_AllowExternalDrop
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.get_Bounds
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.get_BoundsMode
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.get_CoreWebView2
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.get_DefaultBackgroundColor
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.get_IsBrowserHitTransparent
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.get_IsVisible
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.get_ParentWindow
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.get_RasterizationScale
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.get_ShouldDetectMonitorScaleChanges
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.get_ZoomFactor
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.put_AllowExternalDrop
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.put_Bounds
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.put_BoundsMode
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.put_DefaultBackgroundColor
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.put_IsVisible
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.put_ParentWindow
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.put_RasterizationScale
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.put_ShouldDetectMonitorScaleChanges
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.put_ZoomFactor
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.remove_AcceleratorKeyPressed
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.remove_GotFocus
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.remove_LostFocus
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.remove_MoveFocusRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.remove_RasterizationScaleChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.remove_ZoomFactorChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.AcceleratorKeyPressed
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.GotFocus
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.LostFocus
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.MoveFocusRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.RasterizationScaleChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Controller.ZoomFactorChanged
 ---
 
 # CoreWebView2Controller Class

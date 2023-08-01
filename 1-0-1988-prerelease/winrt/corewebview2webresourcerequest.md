@@ -1,8 +1,27 @@
 ---
 description: An HTTP request used with the CoreWebView2.WebResourceRequested event.
 title: CoreWebView2WebResourceRequest
-ms.date: 07/24/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebResourceRequest
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.Content
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.Headers
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.Method
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.get_Content
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.get_Headers
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.get_Method
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.get_Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.put_Content
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.put_Method
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.put_Uri
 ---
 
 # CoreWebView2WebResourceRequest Class
