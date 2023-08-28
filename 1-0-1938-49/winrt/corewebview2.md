@@ -1,7 +1,7 @@
 ---
 description: WebView2 enables you to host web content using the latest Microsoft Edge browser and web technology.
 title: CoreWebView2
-ms.date: 07/28/2023
+ms.date: 08/21/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2
 topic_type:
 - APIRef
@@ -265,7 +265,7 @@ Members|Description
 [NavigationStarting](#navigationstarting) | NavigationStarting is raised when the WebView main frame is requesting permission to navigate to a different URI.
 [NewWindowRequested](#newwindowrequested) | NewWindowRequested is raised when content inside the WebView requests to open a new window, such as through `window.open()`.
 [PermissionRequested](#permissionrequested) | PermissionRequested is raised when content in a WebView requests permission to access some privileged resources.
-[ProcessFailed](#processfailed) | ProcessFailed is raised when a WebView process ends unexpectedly or becomes unresponsive.
+[ProcessFailed](#processfailed) | `ProcessFailed` is raised when any of the processes in the [WebView2 Process Group](/microsoft-edge/webview2/concepts/process-model?tabs=csharp#processes-in-the-webview2-runtime) encounters one of the following conditions:
 [ScriptDialogOpening](#scriptdialogopening) | ScriptDialogOpening is raised when a JavaScript dialog (`alert`, `confirm`, `prompt`, or `beforeunload`) displays for the WebView.
 [ServerCertificateErrorDetected](#servercertificateerrordetected) | The ServerCertificateErrorDetected event is raised when the WebView2 cannot verify server's digital certificate while loading a web page.
 [SourceChanged](#sourcechanged) | SourceChanged is raised when the [CoreWebView2.Source](corewebview2.md#source) property changes.
@@ -314,14 +314,14 @@ Gets the [CoreWebView2CookieManager](corewebview2cookiemanager.md) object associ
 >  [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md) DefaultDownloadDialogCornerAlignment
 
 The default download dialog corner alignment.
-The dialog can be aligned to any of the WebView corners (see [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md)). When the WebView or dialog changes size, the dialog keeps it position relative to the corner. The dialog may become partially or completely outside of the WebView bounds if the WebView is small enough. Set the margin from the corner with the [CoreWebView2.DefaultDownloadDialogMargin](corewebview2.md#defaultdownloaddialogmargin) property. The corner alignment and margin should be set during initialization to ensure that they are correctly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
+The dialog can be aligned to any of the WebView corners (see [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md)). When the WebView or dialog changes size, the dialog keeps it position relative to the corner. The dialog may become partially or completely outside of the WebView bounds if the WebView is small enough. Set the margin from the corner with the [CoreWebView2.DefaultDownloadDialogMargin](corewebview2.md#defaultdownloaddialogmargin) property. The corner alignment and margin should be set during initialization to ensure that they are correcly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
 
 ### DefaultDownloadDialogMargin
 
 >  [Point](/uwp/api/Windows.Foundation.Point) DefaultDownloadDialogMargin
 
 The default download dialog margin relative to the WebView corner specified by [CoreWebView2.DefaultDownloadDialogCornerAlignment](corewebview2.md#defaultdownloaddialogcorneralignment).
-The margin is a point that describes the vertical and horizontal distances between the chosen WebView corner and the default download dialog corner nearest to it. Positive values move the dialog towards the center of the WebView from the chosen WebView corner, and negative values move the dialog away from it. Use (0, 0) to align the dialog to the WebView corner with no margin. The corner alignment and margin should be set during initialization to ensure that they are correctly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
+The margin is a point that describes the vertical and horizontal distances between the chosen WebView corner and the default download dialog corner nearest to it. Positive values move the dialog towards the center of the WebView from the chosen WebView corner, and negative values move the dialog away from it. Use (0, 0) to align the dialog to the WebView corner with no margin. The corner alignment and margin should be set during initialization to ensure that they are correcly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
 
 ### DocumentTitle
 
@@ -504,7 +504,8 @@ Then add instances of those classes via [CoreWebView2.AddHostObjectToScript](cor
 ```csharp
 webView.CoreWebView2.AddHostObjectToScript("bridge", new Bridge());
 ```
-And then in script you can call the methods, and access those properties of the objects added via [CoreWebView2.AddHostObjectToScript](corewebview2.md#addhostobjecttoscript):
+And then in script you can call the methods, and access those properties of the objects added via [CoreWebView2.AddHostObjectToScript](corewebview2.md#addhostobjecttoscript).
+Note that `CoreWebView2.AddHostObjectToScript` only applies to the top-level document and not to frames. To add host objects to frames use `CoreWebView2Frame.AddHostObjectToScript`.
 ```csharp
 // Find added objects on the hostObjects property
 const bridge = chrome.webview.hostObjects.bridge;
@@ -1166,7 +1167,16 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 
 ### ProcessFailed
 
-ProcessFailed is raised when a WebView process ends unexpectedly or becomes unresponsive.
+`ProcessFailed` is raised when any of the processes in the [WebView2 Process Group](/microsoft-edge/webview2/concepts/process-model?tabs=csharp#processes-in-the-webview2-runtime) encounters one of the following conditions:
+
+Condition | Details
+---|---
+Unexpected exit | The process indicated by the event args has exited unexpectedly (usually due to a crash). The failure might or might not be recoverable and some failures are auto-recoverable.
+Unresponsiveness | The process indicated by the event args has become unresponsive to user input. This is only reported for renderer processes, and will run every few seconds until the process becomes responsive again.
+
+**Note:** When the failing process is the browser process, a [CoreWebView2Environment.BrowserProcessExited](corewebview2environment.md#browserprocessexited) event will run too.
+
+Your application can use [CoreWebView2ProcessFailedEventArgs](corewebview2processfailedeventargs.md) to identify which condition and process the event is for, and to collect diagnostics and handle recovery if necessary. For more details about which cases need to be handled by your application, see [CoreWebView2ProcessFailedKind](corewebview2processfailedkind.md).
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ProcessFailedEventArgs](corewebview2processfailedeventargs.md)&gt;
 
