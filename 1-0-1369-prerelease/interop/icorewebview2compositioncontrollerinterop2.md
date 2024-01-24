@@ -5,8 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/06/2022
 ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, winrt, interop, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html, ICoreWebView2CompositionControllerInterop2
 ---
 
