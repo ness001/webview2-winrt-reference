@@ -1,7 +1,7 @@
 ---
 description: Options used to create WebView2 Environment.
 title: CoreWebView2EnvironmentOptions
-ms.date: 02/26/2024
+ms.date: 03/25/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2EnvironmentOptions
 topic_type:
 - APIRef
@@ -14,36 +14,30 @@ api_name:
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.AdditionalBrowserArguments
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.AllowSingleSignOnUsingOSPrimaryAccount
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.AreBrowserExtensionsEnabled
-- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.ChannelSearchKind
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.CustomSchemeRegistrations
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.EnableTrackingPrevention
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.Language
-- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.ReleaseChannels
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.TargetCompatibleBrowserVersion
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions..ctor
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_AdditionalBrowserArguments
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_AllowSingleSignOnUsingOSPrimaryAccount
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_AreBrowserExtensionsEnabled
-- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_ChannelSearchKind
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_CustomSchemeRegistrations
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_EnableTrackingPrevention
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_ExclusiveUserDataFolderAccess
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_IsCustomCrashReportingEnabled
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_Language
-- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_ReleaseChannels
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_TargetCompatibleBrowserVersion
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_AdditionalBrowserArguments
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_AllowSingleSignOnUsingOSPrimaryAccount
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_AreBrowserExtensionsEnabled
-- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_ChannelSearchKind
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_CustomSchemeRegistrations
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_EnableTrackingPrevention
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_ExclusiveUserDataFolderAccess
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_IsCustomCrashReportingEnabled
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_Language
-- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_ReleaseChannels
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_TargetCompatibleBrowserVersion
 ---
 
@@ -61,15 +55,13 @@ Members|Description
 [AdditionalBrowserArguments](#additionalbrowserarguments) | Gets or sets the additional browser arguments to change the behavior of the WebView.
 [AllowSingleSignOnUsingOSPrimaryAccount](#allowsinglesignonusingosprimaryaccount) | Determines whether to enable single sign on with Azure Active Directory (AAD) resources inside WebView using the logged in Windows account and single sign on (SSO) with web sites using Microsoft account associated with the login in Windows account.
 [AreBrowserExtensionsEnabled](#arebrowserextensionsenabled) | Enable/disable browser extensions.
-[ChannelSearchKind](#channelsearchkind) | Set `ChannelSearchKind` to `CoreWebView2ChannelSearchKind.LeastStable` so that the WebView2 loader searches for binaries from least to most stable: Canary -> Dev -> Beta -> WebView2 Runtime.
-[CustomSchemeRegistrations](#customschemeregistrations) |
+[CustomSchemeRegistrations](#customschemeregistrations) | 
 [EnableTrackingPrevention](#enabletrackingprevention) | The EnableTrackingPrevention property is used to enable/disable tracking prevention feature in WebView2. This property enable/disable tracking prevention for all the WebView2's created in the same environment. By default this feature is enabled to block potentially harmful trackers and trackers from sites that aren't visited before and set to [CoreWebView2TrackingPreventionLevel](corewebview2trackingpreventionlevel.md).Balanced or whatever value was last changed/persisted on the profile.
 [ExclusiveUserDataFolderAccess](#exclusiveuserdatafolderaccess) | Determines whether other processes can create [CoreWebView2Controller](corewebview2controller.md) from [CoreWebView2Environment](corewebview2environment.md) created with the same user data folder and therefore sharing the same WebView browser process instance.
 [IsCustomCrashReportingEnabled](#iscustomcrashreportingenabled) | When `IsCustomCrashReportingEnabled` is set to `true`, Windows won't send crash data to Microsoft endpoint.
 [Language](#language) | Gets or sets the default display language for WebView.
-[ReleaseChannels](#releasechannels) | Sets the `ReleaseChannels`, which is a mask of one or more `CoreWebView2ReleaseChannels` indicating which channels environment creation should search for.
 [TargetCompatibleBrowserVersion](#targetcompatiblebrowserversion) | Gets or sets the version of the WebView2 Runtime binaries required to be compatible with your app.
-CoreWebView2EnvironmentOptions |
+CoreWebView2EnvironmentOptions | 
 
 ## Properties
 
@@ -99,13 +91,6 @@ The default value is `false`. Universal Windows Platform apps must also declare 
 
 Enable/disable browser extensions.
 When `AreBrowserExtensionsEnabled` is set to `true`, new extensions can be added to user profile and used. `AreBrowserExtensionsEnabled` is default to be `false`, in this case, new extensions can't be installed, and already installed extension won't be available to use in user profile. If connecting to an already running environment with a different value for `AreBrowserExtensionsEnabled` property, it will fail with `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)`. See [CoreWebView2BrowserExtension](corewebview2browserextension.md) for Extensions API details.
-
-### ChannelSearchKind
-
->  [CoreWebView2ChannelSearchKind](corewebview2channelsearchkind.md) ChannelSearchKind
-
-Set `ChannelSearchKind` to `CoreWebView2ChannelSearchKind.LeastStable` so that the WebView2 loader searches for binaries from least to most stable: Canary -> Dev -> Beta -> WebView2 Runtime.
-The `ChannelSearchKind` property is `CoreWebView2ChannelSearchKind.MostStable` by default and environment creation searches for a release channel on the machine from most to least stable using the first channel found. The default search order is: WebView2 Release -> Beta -> Dev -> Canary. Set `ChannelSearchKind` to `CoreWebView2ChannelSearchKind.LeastStable` to reverse the search order so that environment creation searches for a channel from least to most stable. If a `ReleaseChannels` has been provided, environment creation will only search for channels in the set. See [CoreWebView2ReleaseChannels](corewebview2releasechannels.md) for more details on channels. This property can be overridden by the corresponding registry key `ChannelSearchKind` or the environment variable `WEBVIEW2_CHANNEL_SEARCH_KIND`. Set the value to `1` to reverse the search order. See [CoreWebView2Environment.CreateAsync](corewebview2environment.md#createasync) for more details on overrides.
 
 ### CustomSchemeRegistrations
 
@@ -146,20 +131,6 @@ The default value is `false`. In this case, WebView will respect OS consent.
 
 Gets or sets the default display language for WebView.
 It applies to browser UIs such as context menu and dialogs. It also applies to the `accept-languages` HTTP header that WebView sends to websites. The intended locale value is in the format of BCP 47 Language Tags. More information can be found from [IETF BCP47](https://www.ietf.org/rfc/bcp/bcp47.html).
-
-### ReleaseChannels
-
->  [CoreWebView2ReleaseChannels](corewebview2releasechannels.md) ReleaseChannels
-
-Sets the `ReleaseChannels`, which is a mask of one or more `CoreWebView2ReleaseChannels` indicating which channels environment creation should search for.
-OR operation(s) can be applied to multiple `CoreWebView2ReleaseChannels` to create a mask. The default value is a mask of all the channels. By default, environment creation searches for channels from most to least stable, using the first channel found on the device. When `ReleaseChannels` is provided, environment creation will only search for the channels specified in the set. Set `ChannelSearchKind` to `CoreWebView2ChannelSearchKind.MostStable` to reverse the search order so that the loader searches for the least stable build first. See [CoreWebView2ReleaseChannels](corewebview2releasechannels.md) for descriptions of each channel. Environment creation fails if it is unable to find any channel from the `ReleaseChannels` installed on the device. Use [GetAvailableBrowserVersionString](#getavailablebrowserversionstring) to verify which channel is used. If both a `BrowserExecutableFolder` and `ReleaseChannels` are provided, the `BrowserExecutableFolder` takes precedence. The `ReleaseChannels` can be overridden by the corresponding registry override `ReleaseChannels` or the environment variable `WEBVIEW2_RELEASE_CHANNELS`. Set the value to a comma-separated string of integers, which map to the [CoreWebView2ReleaseChannels](corewebview2releasechannels.md) values: Stable (0), Beta (1), Dev (2), and Canary (3). For example, the values "0,2" and "2,0" indicate that the loader should only search for Dev channel and the WebView2 Runtime, using the order indicated by [CoreWebView2EnvironmentOptions.ChannelSearchKind](corewebview2environmentoptions.md#channelsearchkind). Environment creation attempts to interpret each integer and treats any invalid entry as Stable channel.
-
-|   ReleaseChannels   |   Channel Search Kind: Most Stable (default)   |   Channel Search Kind: Least Stable   |
-| --- | --- | --- |
-|CoreWebView2ReleaseChannels.Beta \| CoreWebView2ReleaseChannels.Stable| WebView2 Runtime -> Beta | Beta -> WebView2 Runtime|
-|CoreWebView2ReleaseChannels.Canary \| CoreWebView2ReleaseChannels.Dev \| CoreWebView2ReleaseChannels.Beta \| CoreWebView2ReleaseChannels.Stable | WebView2 Runtime -> Beta -> Dev -> Canary | Canary -> Dev -> Beta -> WebView2 Runtime |
-|CoreWebView2ReleaseChannels.Canary| Canary | Canary |
-|CoreWebView2ReleaseChannels.Beta \| CoreWebView2ReleaseChannels.Canary \| CoreWebView2ReleaseChannels.Stable | WebView2 Runtime -> Beta -> Canary | Canary -> Beta -> WebView2 Runtime |
 
 ### TargetCompatibleBrowserVersion
 

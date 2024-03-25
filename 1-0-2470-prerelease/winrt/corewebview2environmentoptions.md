@@ -1,7 +1,7 @@
 ---
 description: Options used to create WebView2 Environment.
 title: CoreWebView2EnvironmentOptions
-ms.date: 02/26/2024
+ms.date: 03/25/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2EnvironmentOptions
 topic_type:
 - APIRef
@@ -21,6 +21,7 @@ api_name:
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.Language
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.ReleaseChannels
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.ScrollBarStyle
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.TargetCompatibleBrowserVersion
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions..ctor
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_AdditionalBrowserArguments
@@ -33,6 +34,7 @@ api_name:
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_IsCustomCrashReportingEnabled
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_Language
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_ReleaseChannels
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_ScrollBarStyle
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_TargetCompatibleBrowserVersion
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_AdditionalBrowserArguments
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_AllowSingleSignOnUsingOSPrimaryAccount
@@ -44,6 +46,7 @@ api_name:
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_IsCustomCrashReportingEnabled
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_Language
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_ReleaseChannels
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_ScrollBarStyle
 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_TargetCompatibleBrowserVersion
 ---
 
@@ -62,14 +65,15 @@ Members|Description
 [AllowSingleSignOnUsingOSPrimaryAccount](#allowsinglesignonusingosprimaryaccount) | Determines whether to enable single sign on with Azure Active Directory (AAD) resources inside WebView using the logged in Windows account and single sign on (SSO) with web sites using Microsoft account associated with the login in Windows account.
 [AreBrowserExtensionsEnabled](#arebrowserextensionsenabled) | Enable/disable browser extensions.
 [ChannelSearchKind](#channelsearchkind) | Set `ChannelSearchKind` to `CoreWebView2ChannelSearchKind.LeastStable` so that the WebView2 loader searches for binaries from least to most stable: Canary -> Dev -> Beta -> WebView2 Runtime.
-[CustomSchemeRegistrations](#customschemeregistrations) |
+[CustomSchemeRegistrations](#customschemeregistrations) | 
 [EnableTrackingPrevention](#enabletrackingprevention) | The EnableTrackingPrevention property is used to enable/disable tracking prevention feature in WebView2. This property enable/disable tracking prevention for all the WebView2's created in the same environment. By default this feature is enabled to block potentially harmful trackers and trackers from sites that aren't visited before and set to [CoreWebView2TrackingPreventionLevel](corewebview2trackingpreventionlevel.md).Balanced or whatever value was last changed/persisted on the profile.
 [ExclusiveUserDataFolderAccess](#exclusiveuserdatafolderaccess) | Determines whether other processes can create [CoreWebView2Controller](corewebview2controller.md) from [CoreWebView2Environment](corewebview2environment.md) created with the same user data folder and therefore sharing the same WebView browser process instance.
 [IsCustomCrashReportingEnabled](#iscustomcrashreportingenabled) | When `IsCustomCrashReportingEnabled` is set to `true`, Windows won't send crash data to Microsoft endpoint.
 [Language](#language) | Gets or sets the default display language for WebView.
 [ReleaseChannels](#releasechannels) | Sets the `ReleaseChannels`, which is a mask of one or more `CoreWebView2ReleaseChannels` indicating which channels environment creation should search for.
+[ScrollBarStyle](#scrollbarstyle) | Set ScrollBar style to be used.
 [TargetCompatibleBrowserVersion](#targetcompatiblebrowserversion) | Gets or sets the version of the WebView2 Runtime binaries required to be compatible with your app.
-CoreWebView2EnvironmentOptions |
+CoreWebView2EnvironmentOptions | 
 
 ## Properties
 
@@ -160,6 +164,13 @@ OR operation(s) can be applied to multiple `CoreWebView2ReleaseChannels` to crea
 |CoreWebView2ReleaseChannels.Canary \| CoreWebView2ReleaseChannels.Dev \| CoreWebView2ReleaseChannels.Beta \| CoreWebView2ReleaseChannels.Stable | WebView2 Runtime -> Beta -> Dev -> Canary | Canary -> Dev -> Beta -> WebView2 Runtime |
 |CoreWebView2ReleaseChannels.Canary| Canary | Canary |
 |CoreWebView2ReleaseChannels.Beta \| CoreWebView2ReleaseChannels.Canary \| CoreWebView2ReleaseChannels.Stable | WebView2 Runtime -> Beta -> Canary | Canary -> Beta -> WebView2 Runtime |
+
+### ScrollBarStyle
+
+>  [CoreWebView2ScrollbarStyle](corewebview2scrollbarstyle.md) ScrollBarStyle
+
+Set ScrollBar style to be used.
+The default is `CoreWebView2ScrollbarStyle.Default` which specifies the default browser ScrollBar style. CSS styles that modify the ScrollBar applied on top of native ScrollBar styling that is selected with `CoreWebView2ScrollbarStyle`.
 
 ### TargetCompatibleBrowserVersion
 
