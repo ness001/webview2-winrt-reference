@@ -1,15 +1,29 @@
 ---
+description: 
 title: CoreWebView2ContextMenuItem
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/11/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContextMenuItem
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2ContextMenuItem
+- CoreWebView2ContextMenuItem.Children
+- CoreWebView2ContextMenuItem.CommandId
+- CoreWebView2ContextMenuItem.Icon
+- CoreWebView2ContextMenuItem.IsChecked
+- CoreWebView2ContextMenuItem.IsEnabled
+- CoreWebView2ContextMenuItem.Kind
+- CoreWebView2ContextMenuItem.Label
+- CoreWebView2ContextMenuItem.Name
+- CoreWebView2ContextMenuItem.ShortcutKeyDescription
+- CoreWebView2ContextMenuItem.CustomItemSelected
 ---
 
-# runtimeClass CoreWebView2ContextMenuItem
+# CoreWebView2ContextMenuItem Class
 
 
 
@@ -32,7 +46,7 @@ Members|Description
 
 ### Children
 
-> readonly  [`IVector`](/uwp/api/Windows.Foundation.Collections.IVector-1)&lt;[CoreWebView2ContextMenuItem](corewebview2contextmenuitem.md)&gt; Children
+> readonly  [`IVector`](/uwp/api/Windows.Foundation.Collections.IVector-1)&lt;CoreWebView2ContextMenuItem&gt; Children
 
 ### CommandId
 
@@ -73,7 +87,7 @@ Members|Description
 
 ### CustomItemSelected
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2ContextMenuItem](corewebview2contextmenuitem.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2ContextMenuItem, Object&gt;
 
 
 

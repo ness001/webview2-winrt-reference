@@ -1,15 +1,32 @@
 ---
+description: 
 title: CoreWebView2ContextMenuTarget
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/11/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContextMenuTarget
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2ContextMenuTarget
+- CoreWebView2ContextMenuTarget.FrameUri
+- CoreWebView2ContextMenuTarget.HasLinkText
+- CoreWebView2ContextMenuTarget.HasLinkUri
+- CoreWebView2ContextMenuTarget.HasSelection
+- CoreWebView2ContextMenuTarget.HasSourceUri
+- CoreWebView2ContextMenuTarget.IsEditable
+- CoreWebView2ContextMenuTarget.IsRequestedForMainFrame
+- CoreWebView2ContextMenuTarget.Kind
+- CoreWebView2ContextMenuTarget.LinkText
+- CoreWebView2ContextMenuTarget.LinkUri
+- CoreWebView2ContextMenuTarget.PageUri
+- CoreWebView2ContextMenuTarget.SelectionText
+- CoreWebView2ContextMenuTarget.SourceUri
 ---
 
-# runtimeClass CoreWebView2ContextMenuTarget
+# CoreWebView2ContextMenuTarget Class
 
 
 

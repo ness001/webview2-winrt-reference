@@ -1,15 +1,52 @@
 ---
+description: 
 title: CoreWebView2Environment
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/11/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Environment
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2Environment
+- CoreWebView2Environment.BrowserVersionString
+- CoreWebView2Environment.FailureReportFolderPath
+- CoreWebView2Environment.RenderAdapterLUID
+- CoreWebView2Environment.UserDataFolder
+- CoreWebView2Environment.CompareBrowserVersionString
+- CoreWebView2Environment.CreateAsync
+- CoreWebView2Environment.CreateContextMenuItem
+- CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync
+- CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync
+- CoreWebView2Environment.CreateCoreWebView2ControllerAsync
+- CoreWebView2Environment.CreateCoreWebView2ControllerAsync
+- CoreWebView2Environment.CreateCoreWebView2ControllerOptions
+- CoreWebView2Environment.CreateCoreWebView2PointerInfo
+- CoreWebView2Environment.CreatePrintSettings
+- CoreWebView2Environment.CreateSharedBuffer
+- CoreWebView2Environment.CreateTextureStream
+- CoreWebView2Environment.CreateWebFileSystemDirectoryHandle
+- CoreWebView2Environment.CreateWebFileSystemFileHandle
+- CoreWebView2Environment.CreateWebResourceRequest
+- CoreWebView2Environment.CreateWebResourceResponse
+- CoreWebView2Environment.CreateWithOptionsAsync
+- CoreWebView2Environment.GetAvailableBrowserVersionString
+- CoreWebView2Environment.GetAvailableBrowserVersionString
+- CoreWebView2Environment.GetAvailableBrowserVersionString
+- CoreWebView2Environment.GetProcessExtendedInfosAsync
+- CoreWebView2Environment.GetProcessInfos
+- CoreWebView2Environment.GetProcessInfosWithDetailsAsync
+- CoreWebView2Environment.UpdateRuntimeAsync
+- CoreWebView2Environment.BrowserProcessExited
+- CoreWebView2Environment.NewBrowserVersionAvailable
+- CoreWebView2Environment.ProcessInfosChanged
+- CoreWebView2Environment.RenderAdapterLUIDChanged
+- CoreWebView2Environment.RestartRequested
 ---
 
-# runtimeClass CoreWebView2Environment
+# CoreWebView2Environment Class
 
 
 
@@ -81,7 +118,7 @@ Members|Description
 
 ### CreateAsync
 
-> static [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Environment](corewebview2environment.md)&gt; CreateAsync()
+> static [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;CoreWebView2Environment&gt; CreateAsync()
 
 
 
@@ -93,25 +130,25 @@ Members|Description
 
 ### CreateCoreWebView2CompositionControllerAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md)&gt; CreateCoreWebView2CompositionControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md)&gt; CreateCoreWebView2CompositionControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow)
 
 
 
 ### CreateCoreWebView2CompositionControllerAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md)&gt; CreateCoreWebView2CompositionControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) operation, [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) ParentWindow)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md)&gt; CreateCoreWebView2CompositionControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow, [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) options)
 
 
 
 ### CreateCoreWebView2ControllerAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Controller](corewebview2controller.md)&gt; CreateCoreWebView2ControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) operation, [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) ParentWindow)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Controller](corewebview2controller.md)&gt; CreateCoreWebView2ControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow, [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) options)
 
 
 
 ### CreateCoreWebView2ControllerAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Controller](corewebview2controller.md)&gt; CreateCoreWebView2ControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Controller](corewebview2controller.md)&gt; CreateCoreWebView2ControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow)
 
 
 
@@ -171,7 +208,7 @@ Members|Description
 
 ### CreateWithOptionsAsync
 
-> static [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Environment](corewebview2environment.md)&gt; CreateWithOptionsAsync(string operation, string browserExecutableFolder, [CoreWebView2EnvironmentOptions](corewebview2environmentoptions.md) userDataFolder)
+> static [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;CoreWebView2Environment&gt; CreateWithOptionsAsync(string browserExecutableFolder, string userDataFolder, [CoreWebView2EnvironmentOptions](corewebview2environmentoptions.md) options)
 
 
 
@@ -222,23 +259,23 @@ Members|Description
 
 ### BrowserProcessExited
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Environment](corewebview2environment.md), [CoreWebView2BrowserProcessExitedEventArgs](corewebview2browserprocessexitedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Environment, [CoreWebView2BrowserProcessExitedEventArgs](corewebview2browserprocessexitedeventargs.md)&gt;
 
 ### NewBrowserVersionAvailable
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Environment](corewebview2environment.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Environment, Object&gt;
 
 ### ProcessInfosChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Environment](corewebview2environment.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Environment, Object&gt;
 
 ### RenderAdapterLUIDChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Environment](corewebview2environment.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Environment, Object&gt;
 
 ### RestartRequested
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Environment](corewebview2environment.md), [CoreWebView2RestartRequestedEventArgs](corewebview2restartrequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Environment, [CoreWebView2RestartRequestedEventArgs](corewebview2restartrequestedeventargs.md)&gt;
 
 
 

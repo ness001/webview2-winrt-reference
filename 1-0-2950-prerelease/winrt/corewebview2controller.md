@@ -1,15 +1,40 @@
 ---
+description: 
 title: CoreWebView2Controller
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/11/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Controller
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2Controller
+- CoreWebView2Controller.AllowExternalDrop
+- CoreWebView2Controller.Bounds
+- CoreWebView2Controller.BoundsMode
+- CoreWebView2Controller.CoreWebView2
+- CoreWebView2Controller.DefaultBackgroundColor
+- CoreWebView2Controller.IsBrowserHitTransparent
+- CoreWebView2Controller.IsVisible
+- CoreWebView2Controller.ParentWindow
+- CoreWebView2Controller.RasterizationScale
+- CoreWebView2Controller.ShouldDetectMonitorScaleChanges
+- CoreWebView2Controller.ZoomFactor
+- CoreWebView2Controller.Close
+- CoreWebView2Controller.MoveFocus
+- CoreWebView2Controller.NotifyParentWindowPositionChanged
+- CoreWebView2Controller.SetBoundsAndZoomFactor
+- CoreWebView2Controller.AcceleratorKeyPressed
+- CoreWebView2Controller.GotFocus
+- CoreWebView2Controller.LostFocus
+- CoreWebView2Controller.MoveFocusRequested
+- CoreWebView2Controller.RasterizationScaleChanged
+- CoreWebView2Controller.ZoomFactorChanged
 ---
 
-# runtimeClass CoreWebView2Controller
+# CoreWebView2Controller Class
 
 
 
@@ -118,25 +143,25 @@ Members|Description
 
 ### AcceleratorKeyPressed
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Controller](corewebview2controller.md), [CoreWebView2AcceleratorKeyPressedEventArgs](corewebview2acceleratorkeypressedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Controller, [CoreWebView2AcceleratorKeyPressedEventArgs](corewebview2acceleratorkeypressedeventargs.md)&gt;
 
 ### GotFocus
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Controller](corewebview2controller.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Controller, Object&gt;
 
 ### LostFocus
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Controller](corewebview2controller.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Controller, Object&gt;
 
 ### MoveFocusRequested
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Controller](corewebview2controller.md), [CoreWebView2MoveFocusRequestedEventArgs](corewebview2movefocusrequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Controller, [CoreWebView2MoveFocusRequestedEventArgs](corewebview2movefocusrequestedeventargs.md)&gt;
 
 ### RasterizationScaleChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Controller](corewebview2controller.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Controller, Object&gt;
 
 ### ZoomFactorChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Controller](corewebview2controller.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Controller, Object&gt;
 

@@ -1,15 +1,27 @@
 ---
+description: 
 title: CoreWebView2CookieManager
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/11/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2CookieManager
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2CookieManager
+- CoreWebView2CookieManager.AddOrUpdateCookie
+- CoreWebView2CookieManager.CopyCookie
+- CoreWebView2CookieManager.CreateCookie
+- CoreWebView2CookieManager.DeleteAllCookies
+- CoreWebView2CookieManager.DeleteCookie
+- CoreWebView2CookieManager.DeleteCookies
+- CoreWebView2CookieManager.DeleteCookiesWithDomainAndPath
+- CoreWebView2CookieManager.GetCookiesAsync
 ---
 
-# runtimeClass CoreWebView2CookieManager
+# CoreWebView2CookieManager Class
 
 
 
@@ -74,7 +86,7 @@ Members|Description
 
 ### GetCookiesAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;[CoreWebView2Cookie](corewebview2cookie.md)&gt;&gt; GetCookiesAsync(string operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;[CoreWebView2Cookie](corewebview2cookie.md)&gt;&gt; GetCookiesAsync(string uri)
 
 
 

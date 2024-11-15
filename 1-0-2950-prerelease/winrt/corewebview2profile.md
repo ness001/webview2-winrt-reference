@@ -1,15 +1,38 @@
 ---
+description: 
 title: CoreWebView2Profile
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/11/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Profile
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2Profile
+- CoreWebView2Profile.CookieManager
+- CoreWebView2Profile.DefaultDownloadFolderPath
+- CoreWebView2Profile.IsGeneralAutofillEnabled
+- CoreWebView2Profile.IsInPrivateModeEnabled
+- CoreWebView2Profile.IsPasswordAutosaveEnabled
+- CoreWebView2Profile.PreferredColorScheme
+- CoreWebView2Profile.PreferredTrackingPreventionLevel
+- CoreWebView2Profile.ProfileName
+- CoreWebView2Profile.ProfilePath
+- CoreWebView2Profile.AddBrowserExtensionAsync
+- CoreWebView2Profile.ClearBrowsingDataAsync
+- CoreWebView2Profile.ClearBrowsingDataAsync
+- CoreWebView2Profile.ClearBrowsingDataAsync
+- CoreWebView2Profile.ClearCustomDataPartitionAsync
+- CoreWebView2Profile.Delete
+- CoreWebView2Profile.GetBrowserExtensionsAsync
+- CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync
+- CoreWebView2Profile.SetPermissionStateAsync
+- CoreWebView2Profile.Deleted
 ---
 
-# runtimeClass CoreWebView2Profile
+# CoreWebView2Profile Class
 
 
 
@@ -81,13 +104,13 @@ Members|Description
 
 ### AddBrowserExtensionAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2BrowserExtension](corewebview2browserextension.md)&gt; AddBrowserExtensionAsync(string operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2BrowserExtension](corewebview2browserextension.md)&gt; AddBrowserExtensionAsync(string extensionFolderPath)
 
 
 
 ### ClearBrowsingDataAsync
 
-> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) ClearBrowsingDataAsync([CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md) operation, [DateTime](/uwp/api/Windows.Foundation.DateTime) dataKinds, [DateTime](/uwp/api/Windows.Foundation.DateTime) startTime)
+> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) ClearBrowsingDataAsync([CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md) dataKinds, [DateTime](/uwp/api/Windows.Foundation.DateTime) startTime, [DateTime](/uwp/api/Windows.Foundation.DateTime) endTime)
 
 
 
@@ -99,13 +122,13 @@ Members|Description
 
 ### ClearBrowsingDataAsync
 
-> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) ClearBrowsingDataAsync([CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md) operation)
+> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) ClearBrowsingDataAsync([CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md) dataKinds)
 
 
 
 ### ClearCustomDataPartitionAsync
 
-> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) ClearCustomDataPartitionAsync(string operation)
+> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) ClearCustomDataPartitionAsync(string CustomDataPartitionId)
 
 
 
@@ -129,7 +152,7 @@ Members|Description
 
 ### SetPermissionStateAsync
 
-> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) SetPermissionStateAsync([CoreWebView2PermissionKind](corewebview2permissionkind.md) operation, string PermissionKind, [CoreWebView2PermissionState](corewebview2permissionstate.md) origin)
+> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) SetPermissionStateAsync([CoreWebView2PermissionKind](corewebview2permissionkind.md) PermissionKind, string origin, [CoreWebView2PermissionState](corewebview2permissionstate.md) State)
 
 
 
@@ -138,7 +161,7 @@ Members|Description
 
 ### Deleted
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Profile](corewebview2profile.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Profile, Object&gt;
 
 
 

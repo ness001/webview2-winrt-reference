@@ -1,15 +1,35 @@
 ---
+description: 
 title: CoreWebView2DownloadOperation
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/11/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DownloadOperation
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2DownloadOperation
+- CoreWebView2DownloadOperation.BytesReceived
+- CoreWebView2DownloadOperation.CanResume
+- CoreWebView2DownloadOperation.ContentDisposition
+- CoreWebView2DownloadOperation.EstimatedEndTime
+- CoreWebView2DownloadOperation.InterruptReason
+- CoreWebView2DownloadOperation.MimeType
+- CoreWebView2DownloadOperation.ResultFilePath
+- CoreWebView2DownloadOperation.State
+- CoreWebView2DownloadOperation.TotalBytesToReceive
+- CoreWebView2DownloadOperation.Uri
+- CoreWebView2DownloadOperation.Cancel
+- CoreWebView2DownloadOperation.Pause
+- CoreWebView2DownloadOperation.Resume
+- CoreWebView2DownloadOperation.BytesReceivedChanged
+- CoreWebView2DownloadOperation.EstimatedEndTimeChanged
+- CoreWebView2DownloadOperation.StateChanged
 ---
 
-# runtimeClass CoreWebView2DownloadOperation
+# CoreWebView2DownloadOperation Class
 
 
 
@@ -103,15 +123,15 @@ Members|Description
 
 ### BytesReceivedChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2DownloadOperation](corewebview2downloadoperation.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2DownloadOperation, Object&gt;
 
 ### EstimatedEndTimeChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2DownloadOperation](corewebview2downloadoperation.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2DownloadOperation, Object&gt;
 
 ### StateChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2DownloadOperation](corewebview2downloadoperation.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2DownloadOperation, Object&gt;
 
 
 

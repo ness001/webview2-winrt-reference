@@ -1,15 +1,23 @@
 ---
+description: 
 title: CoreWebView2ScreenCaptureStartingEventArgs
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/11/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ScreenCaptureStartingEventArgs
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2ScreenCaptureStartingEventArgs
+- CoreWebView2ScreenCaptureStartingEventArgs.Cancel
+- CoreWebView2ScreenCaptureStartingEventArgs.Handled
+- CoreWebView2ScreenCaptureStartingEventArgs.OriginalSourceFrameInfo
+- CoreWebView2ScreenCaptureStartingEventArgs.GetDeferral
 ---
 
-# runtimeClass CoreWebView2ScreenCaptureStartingEventArgs
+# CoreWebView2ScreenCaptureStartingEventArgs Class
 
 
 

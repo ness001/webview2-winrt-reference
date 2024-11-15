@@ -1,15 +1,23 @@
 ---
+description: 
 title: CoreWebView2WebResourceRequest
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/11/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebResourceRequest
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2WebResourceRequest
+- CoreWebView2WebResourceRequest.Content
+- CoreWebView2WebResourceRequest.Headers
+- CoreWebView2WebResourceRequest.Method
+- CoreWebView2WebResourceRequest.Uri
 ---
 
-# runtimeClass CoreWebView2WebResourceRequest
+# CoreWebView2WebResourceRequest Class
 
 
 

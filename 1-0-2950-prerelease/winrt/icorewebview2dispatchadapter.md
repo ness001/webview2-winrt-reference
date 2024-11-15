@@ -1,15 +1,23 @@
 ---
+description: 
 title: ICoreWebView2DispatchAdapter
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/11/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, ICoreWebView2DispatchAdapter
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- ICoreWebView2DispatchAdapter
+- ICoreWebView2DispatchAdapter.Clean
+- ICoreWebView2DispatchAdapter.UnwrapObject
+- ICoreWebView2DispatchAdapter.WrapNamedObject
+- ICoreWebView2DispatchAdapter.WrapObject
 ---
 
-# interface ICoreWebView2DispatchAdapter
+# ICoreWebView2DispatchAdapter Interface
 
 
 
@@ -40,13 +48,13 @@ Members|Description
 
 ### WrapNamedObject
 
-> Object WrapNamedObject(string name, [ICoreWebView2DispatchAdapter](icorewebview2dispatchadapter.md) adapter)
+> Object WrapNamedObject(string name, ICoreWebView2DispatchAdapter adapter)
 
 
 
 ### WrapObject
 
-> Object WrapObject(Object unwrapped, [ICoreWebView2DispatchAdapter](icorewebview2dispatchadapter.md) adapter)
+> Object WrapObject(Object unwrapped, ICoreWebView2DispatchAdapter adapter)
 
 
 

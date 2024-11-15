@@ -1,15 +1,114 @@
 ---
+description: 
 title: CoreWebView2
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/11/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2
+- CoreWebView2.BrowserProcessId
+- CoreWebView2.CanGoBack
+- CoreWebView2.CanGoForward
+- CoreWebView2.ContainsFullScreenElement
+- CoreWebView2.CookieManager
+- CoreWebView2.CustomDataPartitionId
+- CoreWebView2.DefaultDownloadDialogCornerAlignment
+- CoreWebView2.DefaultDownloadDialogMargin
+- CoreWebView2.DocumentTitle
+- CoreWebView2.Environment
+- CoreWebView2.FaviconUri
+- CoreWebView2.FrameId
+- CoreWebView2.IsDefaultDownloadDialogOpen
+- CoreWebView2.IsDocumentPlayingAudio
+- CoreWebView2.IsMuted
+- CoreWebView2.IsSuspended
+- CoreWebView2.MemoryUsageTargetLevel
+- CoreWebView2.Profile
+- CoreWebView2.Settings
+- CoreWebView2.Source
+- CoreWebView2.StatusBarText
+- CoreWebView2.AddHostObjectToScript
+- CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync
+- CoreWebView2.AddWebResourceRequestedFilter
+- CoreWebView2.AddWebResourceRequestedFilter
+- CoreWebView2.CallDevToolsProtocolMethodAsync
+- CoreWebView2.CallDevToolsProtocolMethodForSessionAsync
+- CoreWebView2.CapturePreviewAsync
+- CoreWebView2.ClearServerCertificateErrorActionsAsync
+- CoreWebView2.ClearVirtualHostNameToFolderMapping
+- CoreWebView2.CloseDefaultDownloadDialog
+- CoreWebView2.ExecuteScriptAsync
+- CoreWebView2.ExecuteScriptWithResultAsync
+- CoreWebView2.GetDevToolsProtocolEventReceiver
+- CoreWebView2.GetFaviconAsync
+- CoreWebView2.GoBack
+- CoreWebView2.GoForward
+- CoreWebView2.Navigate
+- CoreWebView2.NavigateToString
+- CoreWebView2.NavigateWithWebResourceRequest
+- CoreWebView2.OpenDefaultDownloadDialog
+- CoreWebView2.OpenDevToolsWindow
+- CoreWebView2.OpenTaskManagerWindow
+- CoreWebView2.PostSharedBufferToScript
+- CoreWebView2.PostWebMessageAsJson
+- CoreWebView2.PostWebMessageAsJson
+- CoreWebView2.PostWebMessageAsString
+- CoreWebView2.PrintAsync
+- CoreWebView2.PrintToPdfAsync
+- CoreWebView2.PrintToPdfStreamAsync
+- CoreWebView2.Reload
+- CoreWebView2.RemoveHostObjectFromScript
+- CoreWebView2.RemoveScriptToExecuteOnDocumentCreated
+- CoreWebView2.RemoveWebResourceRequestedFilter
+- CoreWebView2.RemoveWebResourceRequestedFilter
+- CoreWebView2.Resume
+- CoreWebView2.SetVirtualHostNameToFolderMapping
+- CoreWebView2.ShowPrintUI
+- CoreWebView2.ShowSaveAsUIAsync
+- CoreWebView2.Stop
+- CoreWebView2.TrySuspendAsync
+- CoreWebView2.BasicAuthenticationRequested
+- CoreWebView2.ClientCertificateRequested
+- CoreWebView2.ContainsFullScreenElementChanged
+- CoreWebView2.ContentLoading
+- CoreWebView2.ContextMenuRequested
+- CoreWebView2.DOMContentLoaded
+- CoreWebView2.DocumentTitleChanged
+- CoreWebView2.DownloadStarting
+- CoreWebView2.FaviconChanged
+- CoreWebView2.FrameCreated
+- CoreWebView2.FrameNavigationCompleted
+- CoreWebView2.FrameNavigationStarting
+- CoreWebView2.HistoryChanged
+- CoreWebView2.IsDefaultDownloadDialogOpenChanged
+- CoreWebView2.IsDocumentPlayingAudioChanged
+- CoreWebView2.IsMutedChanged
+- CoreWebView2.LaunchingExternalUriScheme
+- CoreWebView2.NavigationCompleted
+- CoreWebView2.NavigationStarting
+- CoreWebView2.NewWindowRequested
+- CoreWebView2.NotificationReceived
+- CoreWebView2.PermissionRequested
+- CoreWebView2.ProcessFailed
+- CoreWebView2.SaveAsUIShowing
+- CoreWebView2.SaveFileSecurityCheckStarting
+- CoreWebView2.ScreenCaptureStarting
+- CoreWebView2.ScriptDialogOpening
+- CoreWebView2.ServerCertificateErrorDetected
+- CoreWebView2.SourceChanged
+- CoreWebView2.StatusBarTextChanged
+- CoreWebView2.WebMessageReceived
+- CoreWebView2.WebResourceRequested
+- CoreWebView2.WebResourceResponseReceived
+- CoreWebView2.WindowCloseRequested
 ---
 
-# runtimeClass CoreWebView2
+# CoreWebView2 Class
 
 
 
@@ -211,7 +310,7 @@ Members|Description
 
 ### AddScriptToExecuteOnDocumentCreatedAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; AddScriptToExecuteOnDocumentCreatedAsync(string operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; AddScriptToExecuteOnDocumentCreatedAsync(string javaScript)
 
 
 
@@ -229,19 +328,19 @@ Members|Description
 
 ### CallDevToolsProtocolMethodAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; CallDevToolsProtocolMethodAsync(string operation, string methodName)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; CallDevToolsProtocolMethodAsync(string methodName, string parametersAsJson)
 
 
 
 ### CallDevToolsProtocolMethodForSessionAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; CallDevToolsProtocolMethodForSessionAsync(string operation, string sessionId, string methodName)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; CallDevToolsProtocolMethodForSessionAsync(string sessionId, string methodName, string parametersAsJson)
 
 
 
 ### CapturePreviewAsync
 
-> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) CapturePreviewAsync([CoreWebView2CapturePreviewImageFormat](corewebview2capturepreviewimageformat.md) operation, [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) imageFormat)
+> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) CapturePreviewAsync([CoreWebView2CapturePreviewImageFormat](corewebview2capturepreviewimageformat.md) imageFormat, [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) imageStream)
 
 
 
@@ -265,13 +364,13 @@ Members|Description
 
 ### ExecuteScriptAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; ExecuteScriptAsync(string operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; ExecuteScriptAsync(string javaScript)
 
 
 
 ### ExecuteScriptWithResultAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2ExecuteScriptResult](corewebview2executescriptresult.md)&gt; ExecuteScriptWithResultAsync(string operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2ExecuteScriptResult](corewebview2executescriptresult.md)&gt; ExecuteScriptWithResultAsync(string javaScript)
 
 
 
@@ -283,7 +382,7 @@ Members|Description
 
 ### GetFaviconAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream)&gt; GetFaviconAsync([CoreWebView2FaviconImageFormat](corewebview2faviconimageformat.md) operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream)&gt; GetFaviconAsync([CoreWebView2FaviconImageFormat](corewebview2faviconimageformat.md) format)
 
 
 
@@ -361,19 +460,19 @@ Members|Description
 
 ### PrintAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2PrintStatus](corewebview2printstatus.md)&gt; PrintAsync([CoreWebView2PrintSettings](corewebview2printsettings.md) operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2PrintStatus](corewebview2printstatus.md)&gt; PrintAsync([CoreWebView2PrintSettings](corewebview2printsettings.md) printSettings)
 
 
 
 ### PrintToPdfAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;bool&gt; PrintToPdfAsync(string operation, [CoreWebView2PrintSettings](corewebview2printsettings.md) ResultFilePath)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;bool&gt; PrintToPdfAsync(string ResultFilePath, [CoreWebView2PrintSettings](corewebview2printsettings.md) printSettings)
 
 
 
 ### PrintToPdfStreamAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream)&gt; PrintToPdfStreamAsync([CoreWebView2PrintSettings](corewebview2printsettings.md) operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream)&gt; PrintToPdfStreamAsync([CoreWebView2PrintSettings](corewebview2printsettings.md) printSettings)
 
 
 
@@ -448,139 +547,139 @@ Members|Description
 
 ### BasicAuthenticationRequested
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2BasicAuthenticationRequestedEventArgs](corewebview2basicauthenticationrequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2BasicAuthenticationRequestedEventArgs](corewebview2basicauthenticationrequestedeventargs.md)&gt;
 
 ### ClientCertificateRequested
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2ClientCertificateRequestedEventArgs](corewebview2clientcertificaterequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ClientCertificateRequestedEventArgs](corewebview2clientcertificaterequestedeventargs.md)&gt;
 
 ### ContainsFullScreenElementChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### ContentLoading
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2ContentLoadingEventArgs](corewebview2contentloadingeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ContentLoadingEventArgs](corewebview2contentloadingeventargs.md)&gt;
 
 ### ContextMenuRequested
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2ContextMenuRequestedEventArgs](corewebview2contextmenurequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ContextMenuRequestedEventArgs](corewebview2contextmenurequestedeventargs.md)&gt;
 
 ### DOMContentLoaded
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2DOMContentLoadedEventArgs](corewebview2domcontentloadedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2DOMContentLoadedEventArgs](corewebview2domcontentloadedeventargs.md)&gt;
 
 ### DocumentTitleChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### DownloadStarting
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2DownloadStartingEventArgs](corewebview2downloadstartingeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2DownloadStartingEventArgs](corewebview2downloadstartingeventargs.md)&gt;
 
 ### FaviconChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### FrameCreated
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2FrameCreatedEventArgs](corewebview2framecreatedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2FrameCreatedEventArgs](corewebview2framecreatedeventargs.md)&gt;
 
 ### FrameNavigationCompleted
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2NavigationCompletedEventArgs](corewebview2navigationcompletedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2NavigationCompletedEventArgs](corewebview2navigationcompletedeventargs.md)&gt;
 
 ### FrameNavigationStarting
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2NavigationStartingEventArgs](corewebview2navigationstartingeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2NavigationStartingEventArgs](corewebview2navigationstartingeventargs.md)&gt;
 
 ### HistoryChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### IsDefaultDownloadDialogOpenChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### IsDocumentPlayingAudioChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### IsMutedChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### LaunchingExternalUriScheme
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2LaunchingExternalUriSchemeEventArgs](corewebview2launchingexternalurischemeeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2LaunchingExternalUriSchemeEventArgs](corewebview2launchingexternalurischemeeventargs.md)&gt;
 
 ### NavigationCompleted
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2NavigationCompletedEventArgs](corewebview2navigationcompletedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2NavigationCompletedEventArgs](corewebview2navigationcompletedeventargs.md)&gt;
 
 ### NavigationStarting
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2NavigationStartingEventArgs](corewebview2navigationstartingeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2NavigationStartingEventArgs](corewebview2navigationstartingeventargs.md)&gt;
 
 ### NewWindowRequested
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2NewWindowRequestedEventArgs](corewebview2newwindowrequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2NewWindowRequestedEventArgs](corewebview2newwindowrequestedeventargs.md)&gt;
 
 ### NotificationReceived
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2NotificationReceivedEventArgs](corewebview2notificationreceivedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2NotificationReceivedEventArgs](corewebview2notificationreceivedeventargs.md)&gt;
 
 ### PermissionRequested
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2PermissionRequestedEventArgs](corewebview2permissionrequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2PermissionRequestedEventArgs](corewebview2permissionrequestedeventargs.md)&gt;
 
 ### ProcessFailed
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2ProcessFailedEventArgs](corewebview2processfailedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ProcessFailedEventArgs](corewebview2processfailedeventargs.md)&gt;
 
 ### SaveAsUIShowing
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2SaveAsUIShowingEventArgs](corewebview2saveasuishowingeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2SaveAsUIShowingEventArgs](corewebview2saveasuishowingeventargs.md)&gt;
 
 ### SaveFileSecurityCheckStarting
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2SaveFileSecurityCheckStartingEventArgs](corewebview2savefilesecuritycheckstartingeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2SaveFileSecurityCheckStartingEventArgs](corewebview2savefilesecuritycheckstartingeventargs.md)&gt;
 
 ### ScreenCaptureStarting
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2ScreenCaptureStartingEventArgs](corewebview2screencapturestartingeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ScreenCaptureStartingEventArgs](corewebview2screencapturestartingeventargs.md)&gt;
 
 ### ScriptDialogOpening
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2ScriptDialogOpeningEventArgs](corewebview2scriptdialogopeningeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ScriptDialogOpeningEventArgs](corewebview2scriptdialogopeningeventargs.md)&gt;
 
 ### ServerCertificateErrorDetected
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2ServerCertificateErrorDetectedEventArgs](corewebview2servercertificateerrordetectedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ServerCertificateErrorDetectedEventArgs](corewebview2servercertificateerrordetectedeventargs.md)&gt;
 
 ### SourceChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2SourceChangedEventArgs](corewebview2sourcechangedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2SourceChangedEventArgs](corewebview2sourcechangedeventargs.md)&gt;
 
 ### StatusBarTextChanged
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### WebMessageReceived
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2WebMessageReceivedEventArgs](corewebview2webmessagereceivedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2WebMessageReceivedEventArgs](corewebview2webmessagereceivedeventargs.md)&gt;
 
 ### WebResourceRequested
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2WebResourceRequestedEventArgs](corewebview2webresourcerequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2WebResourceRequestedEventArgs](corewebview2webresourcerequestedeventargs.md)&gt;
 
 ### WebResourceResponseReceived
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2WebResourceResponseReceivedEventArgs](corewebview2webresourceresponsereceivedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2WebResourceResponseReceivedEventArgs](corewebview2webresourceresponsereceivedeventargs.md)&gt;
 
 ### WindowCloseRequested
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 
 

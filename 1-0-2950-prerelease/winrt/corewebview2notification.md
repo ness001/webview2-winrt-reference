@@ -1,15 +1,36 @@
 ---
+description: 
 title: CoreWebView2Notification
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/11/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Notification
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2Notification
+- CoreWebView2Notification.BadgeUri
+- CoreWebView2Notification.Body
+- CoreWebView2Notification.BodyImageUri
+- CoreWebView2Notification.Direction
+- CoreWebView2Notification.IconUri
+- CoreWebView2Notification.IsSilent
+- CoreWebView2Notification.Language
+- CoreWebView2Notification.RequiresInteraction
+- CoreWebView2Notification.ShouldRenotify
+- CoreWebView2Notification.Tag
+- CoreWebView2Notification.Timestamp
+- CoreWebView2Notification.Title
+- CoreWebView2Notification.VibrationPattern
+- CoreWebView2Notification.ReportClicked
+- CoreWebView2Notification.ReportClosed
+- CoreWebView2Notification.ReportShown
+- CoreWebView2Notification.CloseRequested
 ---
 
-# runtimeClass CoreWebView2Notification
+# CoreWebView2Notification Class
 
 
 
@@ -116,7 +137,7 @@ Members|Description
 
 ### CloseRequested
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Notification](corewebview2notification.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Notification, Object&gt;
 
 
 

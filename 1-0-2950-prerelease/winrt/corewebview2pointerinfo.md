@@ -1,15 +1,47 @@
 ---
+description: 
 title: CoreWebView2PointerInfo
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/11/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PointerInfo
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2PointerInfo
+- CoreWebView2PointerInfo.ButtonChangeKind
+- CoreWebView2PointerInfo.DisplayRect
+- CoreWebView2PointerInfo.FrameId
+- CoreWebView2PointerInfo.HimetricLocation
+- CoreWebView2PointerInfo.HimetricLocationRaw
+- CoreWebView2PointerInfo.HistoryCount
+- CoreWebView2PointerInfo.InputData
+- CoreWebView2PointerInfo.KeyStates
+- CoreWebView2PointerInfo.PenFlags
+- CoreWebView2PointerInfo.PenMask
+- CoreWebView2PointerInfo.PenPressure
+- CoreWebView2PointerInfo.PenRotation
+- CoreWebView2PointerInfo.PenTiltX
+- CoreWebView2PointerInfo.PenTiltY
+- CoreWebView2PointerInfo.PerformanceCount
+- CoreWebView2PointerInfo.PixelLocation
+- CoreWebView2PointerInfo.PixelLocationRaw
+- CoreWebView2PointerInfo.PointerDeviceRect
+- CoreWebView2PointerInfo.PointerFlags
+- CoreWebView2PointerInfo.PointerId
+- CoreWebView2PointerInfo.PointerKind
+- CoreWebView2PointerInfo.Time
+- CoreWebView2PointerInfo.TouchContact
+- CoreWebView2PointerInfo.TouchContactRaw
+- CoreWebView2PointerInfo.TouchFlags
+- CoreWebView2PointerInfo.TouchMask
+- CoreWebView2PointerInfo.TouchOrientation
+- CoreWebView2PointerInfo.TouchPressure
 ---
 
-# runtimeClass CoreWebView2PointerInfo
+# CoreWebView2PointerInfo Class
 
 
 

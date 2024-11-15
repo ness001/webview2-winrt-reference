@@ -1,15 +1,33 @@
 ---
+description: 
 title: CoreWebView2TextureStream
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/11/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2TextureStream
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2TextureStream
+- CoreWebView2TextureStream.Id
+- CoreWebView2TextureStream.AddAllowedOrigin
+- CoreWebView2TextureStream.CloseTexture
+- CoreWebView2TextureStream.CreateTexture
+- CoreWebView2TextureStream.GetAvailableTexture
+- CoreWebView2TextureStream.PresentTexture
+- CoreWebView2TextureStream.RemoveAllowedOrigin
+- CoreWebView2TextureStream.SetD3DDevice
+- CoreWebView2TextureStream.Stop
+- CoreWebView2TextureStream.ErrorReceived
+- CoreWebView2TextureStream.StartRequested
+- CoreWebView2TextureStream.Stopped
+- CoreWebView2TextureStream.WebTextureReceived
+- CoreWebView2TextureStream.WebTextureStreamStopped
 ---
 
-# runtimeClass CoreWebView2TextureStream
+# CoreWebView2TextureStream Class
 
 
 
@@ -95,23 +113,23 @@ Members|Description
 
 ### ErrorReceived
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2TextureStream](corewebview2texturestream.md), [CoreWebView2TextureStreamErrorReceivedEventArgs](corewebview2texturestreamerrorreceivedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2TextureStream, [CoreWebView2TextureStreamErrorReceivedEventArgs](corewebview2texturestreamerrorreceivedeventargs.md)&gt;
 
 ### StartRequested
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2TextureStream](corewebview2texturestream.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2TextureStream, Object&gt;
 
 ### Stopped
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2TextureStream](corewebview2texturestream.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2TextureStream, Object&gt;
 
 ### WebTextureReceived
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2TextureStream](corewebview2texturestream.md), [CoreWebView2TextureStreamWebTextureReceivedEventArgs](corewebview2texturestreamwebtexturereceivedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2TextureStream, [CoreWebView2TextureStreamWebTextureReceivedEventArgs](corewebview2texturestreamwebtexturereceivedeventargs.md)&gt;
 
 ### WebTextureStreamStopped
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2TextureStream](corewebview2texturestream.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2TextureStream, Object&gt;
 
 
 
