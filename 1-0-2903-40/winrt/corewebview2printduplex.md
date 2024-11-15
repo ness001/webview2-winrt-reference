@@ -1,15 +1,19 @@
 ---
+description: Specifies the duplex option for a print.
 title: CoreWebView2PrintDuplex
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PrintDuplex
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2PrintDuplex
 ---
 
-# enum CoreWebView2PrintDuplex
+# CoreWebView2PrintDuplex Enum
 
 Specifies the duplex option for a print.
 

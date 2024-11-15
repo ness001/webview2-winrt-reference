@@ -1,15 +1,21 @@
 ---
+description: Provides a set of properties for a process list with extended information in the CoreWebView2Environment.
 title: CoreWebView2ProcessExtendedInfo
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ProcessExtendedInfo
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2ProcessExtendedInfo
+- CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos
+- CoreWebView2ProcessExtendedInfo.ProcessInfo
 ---
 
-# runtimeClass CoreWebView2ProcessExtendedInfo
+# CoreWebView2ProcessExtendedInfo Class
 
 
 
@@ -29,7 +35,7 @@ Members|Description
 > readonly  [`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;[CoreWebView2FrameInfo](corewebview2frameinfo.md)&gt; AssociatedFrameInfos
 
 Provides the collection of associated CoreWebView2FrameInfos (unresolved reference) which are actively running (showing or hiding UI elements) in this renderer process.
-AssociatedFrameInfos will only be populated when this [CoreWebView2ProcessExtendedInfo](corewebview2processextendedinfo.md) corresponds to a renderer process. Non-renderer processes will always have an empty AssociatedFrameInfo. AssociatedFrameInfos may also be empty for renderer processes that have no active frames.
+AssociatedFrameInfos will only be populated when this CoreWebView2ProcessExtendedInfo corresponds to a renderer process. Non-renderer processes will always have an empty AssociatedFrameInfo. AssociatedFrameInfos may also be empty for renderer processes that have no active frames.
 
 ### ProcessInfo
 

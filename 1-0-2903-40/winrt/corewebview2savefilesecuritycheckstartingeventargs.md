@@ -1,15 +1,25 @@
 ---
+description: Event args for the CoreWebView2.SaveFileSecurityCheckStarting event.
 title: CoreWebView2SaveFileSecurityCheckStartingEventArgs
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2SaveFileSecurityCheckStartingEventArgs
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2SaveFileSecurityCheckStartingEventArgs
+- CoreWebView2SaveFileSecurityCheckStartingEventArgs.CancelSave
+- CoreWebView2SaveFileSecurityCheckStartingEventArgs.DocumentOriginUri
+- CoreWebView2SaveFileSecurityCheckStartingEventArgs.FileExtension
+- CoreWebView2SaveFileSecurityCheckStartingEventArgs.FilePath
+- CoreWebView2SaveFileSecurityCheckStartingEventArgs.SuppressDefaultPolicy
+- CoreWebView2SaveFileSecurityCheckStartingEventArgs.GetDeferral
 ---
 
-# runtimeClass CoreWebView2SaveFileSecurityCheckStartingEventArgs
+# CoreWebView2SaveFileSecurityCheckStartingEventArgs Class
 
 
 

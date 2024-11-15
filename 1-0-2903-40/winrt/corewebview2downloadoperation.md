@@ -1,15 +1,35 @@
 ---
+description: Represents a download operation. Gives access to a download's metadata and supports a user canceling, pausing, or resuming a download.
 title: CoreWebView2DownloadOperation
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DownloadOperation
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2DownloadOperation
+- CoreWebView2DownloadOperation.BytesReceived
+- CoreWebView2DownloadOperation.CanResume
+- CoreWebView2DownloadOperation.ContentDisposition
+- CoreWebView2DownloadOperation.EstimatedEndTime
+- CoreWebView2DownloadOperation.InterruptReason
+- CoreWebView2DownloadOperation.MimeType
+- CoreWebView2DownloadOperation.ResultFilePath
+- CoreWebView2DownloadOperation.State
+- CoreWebView2DownloadOperation.TotalBytesToReceive
+- CoreWebView2DownloadOperation.Uri
+- CoreWebView2DownloadOperation.Cancel
+- CoreWebView2DownloadOperation.Pause
+- CoreWebView2DownloadOperation.Resume
+- CoreWebView2DownloadOperation.BytesReceivedChanged
+- CoreWebView2DownloadOperation.EstimatedEndTimeChanged
+- CoreWebView2DownloadOperation.StateChanged
 ---
 
-# runtimeClass CoreWebView2DownloadOperation
+# CoreWebView2DownloadOperation Class
 
 
 
@@ -141,20 +161,20 @@ Resuming a download changes the state from interrupted to in progress.
 
 Event raised when the bytes received count is updated.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2DownloadOperation](corewebview2downloadoperation.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2DownloadOperation, Object&gt;
 
 ### EstimatedEndTimeChanged
 
 Event raised when the estimated end time changes.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2DownloadOperation](corewebview2downloadoperation.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2DownloadOperation, Object&gt;
 
 ### StateChanged
 
 Event raised when the state of the download changes.
-Use [CoreWebView2DownloadOperation](corewebview2downloadoperation.md).State to get the current state, and [CoreWebView2DownloadOperation](corewebview2downloadoperation.md).InterruptReason to get the reason if the download is interrupted.
+Use CoreWebView2DownloadOperation.State to get the current state, and CoreWebView2DownloadOperation.InterruptReason to get the reason if the download is interrupted.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2DownloadOperation](corewebview2downloadoperation.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2DownloadOperation, Object&gt;
 
 
 

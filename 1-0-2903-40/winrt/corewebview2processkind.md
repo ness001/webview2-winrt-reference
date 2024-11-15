@@ -1,15 +1,19 @@
 ---
+description: Specifies the process kind used in CoreWebView2ProcessInfo.
 title: CoreWebView2ProcessKind
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ProcessKind
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2ProcessKind
 ---
 
-# enum CoreWebView2ProcessKind
+# CoreWebView2ProcessKind Enum
 
 Specifies the process kind used in [CoreWebView2ProcessInfo](corewebview2processinfo.md).
 The values in this enum make reference to the process kinds in the Chromium architecture. For more information about what these processes are and what they do, see [Browser Architecture - Inside look at modern web browser](https://developers.google.com/web/updates/2018/09/inside-browser-part1).

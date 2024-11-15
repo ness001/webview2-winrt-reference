@@ -1,15 +1,23 @@
 ---
+description: Interface to create IDispatch implementing adapter classes for WinRT runtime classes to work with CoreWebView2.AddHostObjectToScript.
 title: ICoreWebView2DispatchAdapter
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, ICoreWebView2DispatchAdapter
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- ICoreWebView2DispatchAdapter
+- ICoreWebView2DispatchAdapter.Clean
+- ICoreWebView2DispatchAdapter.UnwrapObject
+- ICoreWebView2DispatchAdapter.WrapNamedObject
+- ICoreWebView2DispatchAdapter.WrapObject
 ---
 
-# interface ICoreWebView2DispatchAdapter
+# ICoreWebView2DispatchAdapter Interface
 
 
 
@@ -46,7 +54,7 @@ Given an object returned by [ICoreWebView2DispatchAdapter.WrapObject](icorewebvi
 
 ### WrapNamedObject
 
-> Object WrapNamedObject(string name, [ICoreWebView2DispatchAdapter](icorewebview2dispatchadapter.md) adapter)
+> Object WrapNamedObject(string name, ICoreWebView2DispatchAdapter adapter)
 
 Given a named WinRT namespace, runtimeclass with constructor's name, static API's name, or enum name, this method returns an object that implements IDispatch representing that named entity.
 The adapter parameter is this DispatchAdapter or a parent DispatchAdapter.
@@ -55,7 +63,7 @@ The adapter parameter is this DispatchAdapter or a parent DispatchAdapter.
 
 ### WrapObject
 
-> Object WrapObject(Object unwrapped, [ICoreWebView2DispatchAdapter](icorewebview2dispatchadapter.md) adapter)
+> Object WrapObject(Object unwrapped, ICoreWebView2DispatchAdapter adapter)
 
 Given a WinRT object, this method returns an object that implements IDispatch representing that object.
 The adapter parameter is this DispatchAdapter or a parent DispatchAdapter.

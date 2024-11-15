@@ -1,15 +1,19 @@
 ---
+description: Indicates the kind of context for which the context menu was created for the CoreWebView2ContextMenuTarget.Kind property. This enum will always represent the active element that caused the context menu request. If there is a selection with multiple images, audio and text, for example, the element that the end user right clicks on within this selection will be the option represented by this enum.
 title: CoreWebView2ContextMenuTargetKind
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContextMenuTargetKind
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2ContextMenuTargetKind
 ---
 
-# enum CoreWebView2ContextMenuTargetKind
+# CoreWebView2ContextMenuTargetKind Enum
 
 Indicates the kind of context for which the context menu was created for the [CoreWebView2ContextMenuTarget.Kind](corewebview2contextmenutarget.md#kind) property. This enum will always represent the active element that caused the context menu request. If there is a selection with multiple images, audio and text, for example, the element that the end user right clicks on within this selection will be the option represented by this enum.
 

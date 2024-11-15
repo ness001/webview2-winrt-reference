@@ -1,15 +1,21 @@
 ---
+description: Provides a set of properties for a process list in the CoreWebView2Environment.
 title: CoreWebView2ProcessInfo
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ProcessInfo
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2ProcessInfo
+- CoreWebView2ProcessInfo.Kind
+- CoreWebView2ProcessInfo.ProcessId
 ---
 
-# runtimeClass CoreWebView2ProcessInfo
+# CoreWebView2ProcessInfo Class
 
 
 

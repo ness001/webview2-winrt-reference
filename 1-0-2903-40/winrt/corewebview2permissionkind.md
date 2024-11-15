@@ -1,15 +1,19 @@
 ---
+description: Indicates the kind of a permission request.
 title: CoreWebView2PermissionKind
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PermissionKind
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2PermissionKind
 ---
 
-# enum CoreWebView2PermissionKind
+# CoreWebView2PermissionKind Enum
 
 Indicates the kind of a permission request.
 

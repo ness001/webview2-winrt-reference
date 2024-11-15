@@ -1,15 +1,19 @@
 ---
+description: Specifies the process failure reason used in CoreWebView2ProcessFailedEventArgs. For process failures where a process has exited, it indicates the type of issue that produced the process exit.
 title: CoreWebView2ProcessFailedReason
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ProcessFailedReason
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2ProcessFailedReason
 ---
 
-# enum CoreWebView2ProcessFailedReason
+# CoreWebView2ProcessFailedReason Enum
 
 Specifies the process failure reason used in [CoreWebView2ProcessFailedEventArgs](corewebview2processfailedeventargs.md). For process failures where a process has exited, it indicates the type of issue that produced the process exit.
 

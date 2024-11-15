@@ -1,15 +1,19 @@
 ---
+description: The order that release channels are searched for during environment creation.
 title: CoreWebView2ChannelSearchKind
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ChannelSearchKind
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2ChannelSearchKind
 ---
 
-# enum CoreWebView2ChannelSearchKind
+# CoreWebView2ChannelSearchKind Enum
 
 The order that release channels are searched for during environment creation.
 The default behavior is to search for and use the most stable channel found on the device. The order from most to least stable is: WebView2 Runtime -> Beta -> Dev -> Canary. Switch the order to prefer the least stable channel in order to perform pre-release testing. See [CoreWebView2ReleaseChannels](corewebview2releasechannels.md) for descriptions of channels.

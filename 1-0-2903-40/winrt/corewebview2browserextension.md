@@ -1,15 +1,24 @@
 ---
+description: Browser extension installed on current profile.
 title: CoreWebView2BrowserExtension
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2BrowserExtension
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2BrowserExtension
+- CoreWebView2BrowserExtension.Id
+- CoreWebView2BrowserExtension.IsEnabled
+- CoreWebView2BrowserExtension.Name
+- CoreWebView2BrowserExtension.EnableAsync
+- CoreWebView2BrowserExtension.RemoveAsync
 ---
 
-# runtimeClass CoreWebView2BrowserExtension
+# CoreWebView2BrowserExtension Class
 
 
 
@@ -51,7 +60,7 @@ This is the browser extension's name. This value is defined in this browser exte
 
 ### EnableAsync
 
-> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) EnableAsync(bool operation)
+> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) EnableAsync(bool IsEnabled)
 
 Sets whether this browser extension is enabled or disabled. This change applies immediately to the extension in all HTML documents in all WebView2s associated with this profile. After an extension is removed, calling `Enable` will not change the value of `IsEnabled`.
 

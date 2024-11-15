@@ -1,15 +1,22 @@
 ---
+description: Used to manage profile options that created by CoreWebView2Environment.CreateCoreWebView2ControllerOptions.
 title: CoreWebView2ControllerOptions
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ControllerOptions
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2ControllerOptions
+- CoreWebView2ControllerOptions.IsInPrivateModeEnabled
+- CoreWebView2ControllerOptions.ProfileName
+- CoreWebView2ControllerOptions.ScriptLocale
 ---
 
-# runtimeClass CoreWebView2ControllerOptions
+# CoreWebView2ControllerOptions Class
 
 
 

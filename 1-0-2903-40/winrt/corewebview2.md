@@ -1,15 +1,113 @@
 ---
+description: WebView2 enables you to host web content using the latest Microsoft Edge browser and web technology.
 title: CoreWebView2
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2
+- CoreWebView2.BrowserProcessId
+- CoreWebView2.CanGoBack
+- CoreWebView2.CanGoForward
+- CoreWebView2.ContainsFullScreenElement
+- CoreWebView2.CookieManager
+- CoreWebView2.DefaultDownloadDialogCornerAlignment
+- CoreWebView2.DefaultDownloadDialogMargin
+- CoreWebView2.DocumentTitle
+- CoreWebView2.Environment
+- CoreWebView2.FaviconUri
+- CoreWebView2.FrameId
+- CoreWebView2.IsDefaultDownloadDialogOpen
+- CoreWebView2.IsDocumentPlayingAudio
+- CoreWebView2.IsMuted
+- CoreWebView2.IsSuspended
+- CoreWebView2.MemoryUsageTargetLevel
+- CoreWebView2.Profile
+- CoreWebView2.Settings
+- CoreWebView2.Source
+- CoreWebView2.StatusBarText
+- CoreWebView2.AddHostObjectToScript
+- CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync
+- CoreWebView2.AddWebResourceRequestedFilter
+- CoreWebView2.AddWebResourceRequestedFilter
+- CoreWebView2.CallDevToolsProtocolMethodAsync
+- CoreWebView2.CallDevToolsProtocolMethodForSessionAsync
+- CoreWebView2.CapturePreviewAsync
+- CoreWebView2.ClearServerCertificateErrorActionsAsync
+- CoreWebView2.ClearVirtualHostNameToFolderMapping
+- CoreWebView2.CloseDefaultDownloadDialog
+- CoreWebView2.ExecuteScriptAsync
+- CoreWebView2.ExecuteScriptWithResultAsync
+- CoreWebView2.GetDevToolsProtocolEventReceiver
+- CoreWebView2.GetFaviconAsync
+- CoreWebView2.GoBack
+- CoreWebView2.GoForward
+- CoreWebView2.Navigate
+- CoreWebView2.NavigateToString
+- CoreWebView2.NavigateWithWebResourceRequest
+- CoreWebView2.OpenDefaultDownloadDialog
+- CoreWebView2.OpenDevToolsWindow
+- CoreWebView2.OpenTaskManagerWindow
+- CoreWebView2.PostSharedBufferToScript
+- CoreWebView2.PostWebMessageAsJson
+- CoreWebView2.PostWebMessageAsJson
+- CoreWebView2.PostWebMessageAsString
+- CoreWebView2.PrintAsync
+- CoreWebView2.PrintToPdfAsync
+- CoreWebView2.PrintToPdfStreamAsync
+- CoreWebView2.Reload
+- CoreWebView2.RemoveHostObjectFromScript
+- CoreWebView2.RemoveScriptToExecuteOnDocumentCreated
+- CoreWebView2.RemoveWebResourceRequestedFilter
+- CoreWebView2.RemoveWebResourceRequestedFilter
+- CoreWebView2.Resume
+- CoreWebView2.SetVirtualHostNameToFolderMapping
+- CoreWebView2.ShowPrintUI
+- CoreWebView2.ShowSaveAsUIAsync
+- CoreWebView2.Stop
+- CoreWebView2.TrySuspendAsync
+- CoreWebView2.BasicAuthenticationRequested
+- CoreWebView2.ClientCertificateRequested
+- CoreWebView2.ContainsFullScreenElementChanged
+- CoreWebView2.ContentLoading
+- CoreWebView2.ContextMenuRequested
+- CoreWebView2.DOMContentLoaded
+- CoreWebView2.DocumentTitleChanged
+- CoreWebView2.DownloadStarting
+- CoreWebView2.FaviconChanged
+- CoreWebView2.FrameCreated
+- CoreWebView2.FrameNavigationCompleted
+- CoreWebView2.FrameNavigationStarting
+- CoreWebView2.HistoryChanged
+- CoreWebView2.IsDefaultDownloadDialogOpenChanged
+- CoreWebView2.IsDocumentPlayingAudioChanged
+- CoreWebView2.IsMutedChanged
+- CoreWebView2.LaunchingExternalUriScheme
+- CoreWebView2.NavigationCompleted
+- CoreWebView2.NavigationStarting
+- CoreWebView2.NewWindowRequested
+- CoreWebView2.NotificationReceived
+- CoreWebView2.PermissionRequested
+- CoreWebView2.ProcessFailed
+- CoreWebView2.SaveAsUIShowing
+- CoreWebView2.SaveFileSecurityCheckStarting
+- CoreWebView2.ScreenCaptureStarting
+- CoreWebView2.ScriptDialogOpening
+- CoreWebView2.ServerCertificateErrorDetected
+- CoreWebView2.SourceChanged
+- CoreWebView2.StatusBarTextChanged
+- CoreWebView2.WebMessageReceived
+- CoreWebView2.WebResourceRequested
+- CoreWebView2.WebResourceResponseReceived
+- CoreWebView2.WindowCloseRequested
 ---
 
-# runtimeClass CoreWebView2
+# CoreWebView2 Class
 
 
 
@@ -23,11 +121,11 @@ Members|Description
 [CanGoBack](#cangoback) | `true` if the WebView is able to navigate to a previous page in the navigation history.
 [CanGoForward](#cangoforward) | `true` if the WebView is able to navigate to a next page in the navigation history.
 [ContainsFullScreenElement](#containsfullscreenelement) | Indicates if the WebView contains a fullscreen HTML element.
-[CookieManager](#cookiemanager) | Gets the [CoreWebView2CookieManager](corewebview2cookiemanager.md) object associated with this [CoreWebView2](corewebview2.md).
+[CookieManager](#cookiemanager) | Gets the [CoreWebView2CookieManager](corewebview2cookiemanager.md) object associated with this CoreWebView2.
 [DefaultDownloadDialogCornerAlignment](#defaultdownloaddialogcorneralignment) | The default download dialog corner alignment.
 [DefaultDownloadDialogMargin](#defaultdownloaddialogmargin) | The default download dialog margin relative to the WebView corner specified by [CoreWebView2.DefaultDownloadDialogCornerAlignment](corewebview2.md#defaultdownloaddialogcorneralignment).
 [DocumentTitle](#documenttitle) | Gets the title for the current top-level document.
-[Environment](#environment) | Exposes the [CoreWebView2Environment](corewebview2environment.md) used to create this [CoreWebView2](corewebview2.md).
+[Environment](#environment) | Exposes the [CoreWebView2Environment](corewebview2environment.md) used to create this CoreWebView2.
 [FaviconUri](#faviconuri) | Get the Uri as a string of the current Favicon. This will be an empty string if the page does not have a Favicon.
 [FrameId](#frameid) | The unique identifier of the main frame. It's the same kind of ID as with the [CoreWebView2Frame.FrameId](corewebview2frame.md#frameid) and [CoreWebView2FrameInfo.FrameId](corewebview2frameinfo.md#frameid).
 [IsDefaultDownloadDialogOpen](#isdefaultdownloaddialogopen) | True if the default download dialog is currently open.
@@ -35,7 +133,7 @@ Members|Description
 [IsMuted](#ismuted) | Indicates whether all audio output from this CoreWebView2 is muted or not. Set to true will mute this CoreWebView2, and set to false will unmute this CoreWebView2. `true` if audio is muted.
 [IsSuspended](#issuspended) | Whether WebView is suspended.
 [MemoryUsageTargetLevel](#memoryusagetargetlevel) | Desired [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md) of a WebView.
-[Profile](#profile) | The associated [CoreWebView2Profile](corewebview2profile.md) object of [CoreWebView2](corewebview2.md).
+[Profile](#profile) | The associated [CoreWebView2Profile](corewebview2profile.md) object of CoreWebView2.
 [Settings](#settings) | Gets the [CoreWebView2Settings](corewebview2settings.md) object contains various modifiable settings for the running WebView.
 [Source](#source) | Gets the URI of the current top level document.
 [StatusBarText](#statusbartext) | The current text of the statusbar as defined by [Window.statusbar](https://developer.mozilla.org/docs/Web/API/Window/statusbar).
@@ -146,7 +244,7 @@ Indicates if the WebView contains a fullscreen HTML element.
 
 > readonly  [CoreWebView2CookieManager](corewebview2cookiemanager.md) CookieManager
 
-Gets the [CoreWebView2CookieManager](corewebview2cookiemanager.md) object associated with this [CoreWebView2](corewebview2.md).
+Gets the [CoreWebView2CookieManager](corewebview2cookiemanager.md) object associated with this CoreWebView2.
 
 ### DefaultDownloadDialogCornerAlignment
 
@@ -173,7 +271,7 @@ If the document has no explicit title or is otherwise empty, a default that may 
 
 > readonly  [CoreWebView2Environment](corewebview2environment.md) Environment
 
-Exposes the [CoreWebView2Environment](corewebview2environment.md) used to create this [CoreWebView2](corewebview2.md).
+Exposes the [CoreWebView2Environment](corewebview2environment.md) used to create this CoreWebView2.
 
 ### FaviconUri
 
@@ -186,7 +284,7 @@ Get the Uri as a string of the current Favicon. This will be an empty string if 
 > readonly  uint32_t FrameId
 
 The unique identifier of the main frame. It's the same kind of ID as with the [CoreWebView2Frame.FrameId](corewebview2frame.md#frameid) and [CoreWebView2FrameInfo.FrameId](corewebview2frameinfo.md#frameid).
-FrameId may not be valid if [CoreWebView2](corewebview2.md) has not done any navigation. It's safe to get this value during or after the first [CoreWebView2.ContentLoading](corewebview2.md#contentloading) event. Otherwise, it could return the invalid frame Id `0`.
+FrameId may not be valid if CoreWebView2 has not done any navigation. It's safe to get this value during or after the first [CoreWebView2.ContentLoading](corewebview2.md#contentloading) event. Otherwise, it could return the invalid frame Id `0`.
 
 ### IsDefaultDownloadDialogOpen
 
@@ -242,7 +340,7 @@ Calling [CoreWebView2.Resume](corewebview2.md#resume) when the WebView is not su
 
 > readonly  [CoreWebView2Profile](corewebview2profile.md) Profile
 
-The associated [CoreWebView2Profile](corewebview2profile.md) object of [CoreWebView2](corewebview2.md).
+The associated [CoreWebView2Profile](corewebview2profile.md) object of CoreWebView2.
 
 ### Settings
 
@@ -379,7 +477,7 @@ console.log(result);
 
 ### AddScriptToExecuteOnDocumentCreatedAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; AddScriptToExecuteOnDocumentCreatedAsync(string operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; AddScriptToExecuteOnDocumentCreatedAsync(string javaScript)
 
 Adds the provided JavaScript to a list of scripts that should be run after the global object has been created, but before the HTML document has been parsed and before any other script included by the HTML document is run.
 The injected script will apply to all future top level document and child frame navigations until removed with [CoreWebView2.RemoveScriptToExecuteOnDocumentCreated](corewebview2.md#removescripttoexecuteondocumentcreated).
@@ -406,7 +504,7 @@ This is an overload method that allows to subscribe to WebResourceRequested even
 
 ### CallDevToolsProtocolMethodAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; CallDevToolsProtocolMethodAsync(string operation, string methodName)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; CallDevToolsProtocolMethodAsync(string methodName, string parametersAsJson)
 
 Runs an asynchronous DevToolsProtocol method.
 For more information about available methods, navigate to [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs). The returned task is completed when the method asynchronously completes and will return the method's return object as a JSON string. Note even though WebView2 dispatches the CDP messages in the order called, CDP method calls may be processed out of order. If you require CDP methods to run in a particular order, you should await for the previous method call.
@@ -421,7 +519,7 @@ For more details [CoreWebView2NewWindowRequestedEventArgs.NewWindow](corewebview
 
 ### CallDevToolsProtocolMethodForSessionAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; CallDevToolsProtocolMethodForSessionAsync(string operation, string sessionId, string methodName)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; CallDevToolsProtocolMethodForSessionAsync(string sessionId, string methodName, string parametersAsJson)
 
 Runs an asynchronous `DevToolsProtocol` method for a specific session of an attached target.
 There could be multiple `DevToolsProtocol` targets in a WebView.
@@ -439,7 +537,7 @@ For more information about available methods, navigate to [DevTools Protocol Vie
 
 ### CapturePreviewAsync
 
-> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) CapturePreviewAsync([CoreWebView2CapturePreviewImageFormat](corewebview2capturepreviewimageformat.md) operation, [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) imageFormat)
+> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) CapturePreviewAsync([CoreWebView2CapturePreviewImageFormat](corewebview2capturepreviewimageformat.md) imageFormat, [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) imageStream)
 
 Captures an image of what WebView is displaying.
 When CapturePreviewAsync finishes writing to the stream, the Invoke method on the provided handler parameter is called. This method fails if called before the first [CoreWebView2.ContentLoading](corewebview2.md#contentloading) event. For example if this is called in the [CoreWebView2.NavigationStarting](corewebview2.md#navigationstarting) event for the first navigation it will fail. For subsequent navigations, the method may not fail, but will not capture an image of a given webpage until the [CoreWebView2.ContentLoading](corewebview2.md#contentloading) event has been fired for it. Any call to this method prior to that will result in a capture of the page being navigated away from.
@@ -473,7 +571,7 @@ Calling this method raises the [CoreWebView2.IsDefaultDownloadDialogOpenChanged]
 
 ### ExecuteScriptAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; ExecuteScriptAsync(string operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; ExecuteScriptAsync(string javaScript)
 
 Runs JavaScript code from the `javaScript` parameter in the current top-level document rendered in the WebView.
 If the result is `undefined`, contains a reference cycle, or otherwise is not able to be encoded into JSON, the JSON `null` value is returned as the `"null"` string.
@@ -484,7 +582,7 @@ A function that has no explicit return value returns `undefined`. If the script 
 
 ### ExecuteScriptWithResultAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2ExecuteScriptResult](corewebview2executescriptresult.md)&gt; ExecuteScriptWithResultAsync(string operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2ExecuteScriptResult](corewebview2executescriptresult.md)&gt; ExecuteScriptWithResultAsync(string javaScript)
 
 Runs JavaScript code from the `javaScript` parameter in the current top-level document rendered in the WebView, The result of the execution is returned asynchronously in the [CoreWebView2ExecuteScriptResult](corewebview2executescriptresult.md) object which has methods and properties to obtain the successful result of script execution as well as any unhandled JavaScript exceptions.
 
@@ -501,7 +599,7 @@ For more information about DevToolsProtocol events description and event args, n
 
 ### GetFaviconAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream)&gt; GetFaviconAsync([CoreWebView2FaviconImageFormat](corewebview2faviconimageformat.md) operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream)&gt; GetFaviconAsync([CoreWebView2FaviconImageFormat](corewebview2faviconimageformat.md) format)
 
 Get the downloaded Favicon image for the current page and copy it to the image stream.
 An `IStream` populated with the downloaded Favicon.
@@ -671,7 +769,7 @@ This behaves in exactly the same manner as [CoreWebView2.PostWebMessageAsJson](c
 
 ### PrintAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2PrintStatus](corewebview2printstatus.md)&gt; PrintAsync([CoreWebView2PrintSettings](corewebview2printsettings.md) operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2PrintStatus](corewebview2printstatus.md)&gt; PrintAsync([CoreWebView2PrintSettings](corewebview2printsettings.md) printSettings)
 
 Print the current web page asynchronously to the specified printer with the provided settings.
 See [CoreWebView2PrintSettings](corewebview2printsettings.md) for description of settings. Passing null for `printSettings` results in default print settings used.
@@ -693,7 +791,7 @@ The async Print operation completes when it finishes printing to the printer. On
 
 ### PrintToPdfAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;bool&gt; PrintToPdfAsync(string operation, [CoreWebView2PrintSettings](corewebview2printsettings.md) ResultFilePath)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;bool&gt; PrintToPdfAsync(string ResultFilePath, [CoreWebView2PrintSettings](corewebview2printsettings.md) printSettings)
 
 Print the current page to PDF asynchronously with the provided settings.
 See [CoreWebView2PrintSettings](corewebview2printsettings.md) for description of settings. Passing null for `printSettings` results in default print settings used.
@@ -707,7 +805,7 @@ If PrintToPdf is called while a print to PDF operation is in progress, the IAsyn
 
 ### PrintToPdfStreamAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream)&gt; PrintToPdfStreamAsync([CoreWebView2PrintSettings](corewebview2printsettings.md) operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream)&gt; PrintToPdfStreamAsync([CoreWebView2PrintSettings](corewebview2printsettings.md) printSettings)
 
 Provides the Pdf data of current web page asynchronously for the provided settings.
 Stream will be rewound to the start of the pdf data.
@@ -881,7 +979,7 @@ All WebView APIs can still be accessed when a WebView is suspended. Some APIs li
 BasicAuthenticationRequested event is raised when WebView encounters a Basic HTTP Authentication request as described in https://developer.mozilla.org/docs/Web/HTTP/Authentication, a Digest HTTP Authentication request as described in https://developer.mozilla.org/docs/Web/HTTP/Headers/Authorization#digest, an NTLM authentication or a Proxy Authentication request.
 The host can provide a response with credentials for the authentication or cancel the request. If the host sets the Cancel property to false but does not provide either UserName or Password properties on the Response property, then WebView2 will show the default authentication challenge dialog prompt to the user.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2BasicAuthenticationRequestedEventArgs](corewebview2basicauthenticationrequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2BasicAuthenticationRequestedEventArgs](corewebview2basicauthenticationrequestedeventargs.md)&gt;
 
 ### ClientCertificateRequested
 
@@ -897,101 +995,101 @@ Cancel the request                                         | n/a     | True   | 
 
 If the host don't handle the event, WebView2 will show the default client certificate selection dialog prompt to the user.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2ClientCertificateRequestedEventArgs](corewebview2clientcertificaterequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ClientCertificateRequestedEventArgs](corewebview2clientcertificaterequestedeventargs.md)&gt;
 
 ### ContainsFullScreenElementChanged
 
 ContainsFullScreenElementChanged is raised when the [CoreWebView2.ContainsFullScreenElement](corewebview2.md#containsfullscreenelement) property changes.
 An HTML element inside the WebView may enter fullscreen to the size of the WebView or leave fullscreen. This event is useful when, for example, a video element requests to go fullscreen. The listener of this event may resize the WebView in response.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### ContentLoading
 
 ContentLoading is raised before any content is loaded, including scripts added with [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync](corewebview2.md#addscripttoexecuteondocumentcreatedasync). ContentLoading is not raised if a same page navigation occurs (such as through fragment navigations or `history.pushState` navigations).
 This operation follows the [CoreWebView2.NavigationStarting](corewebview2.md#navigationstarting) and [CoreWebView2.SourceChanged](corewebview2.md#sourcechanged) events and precedes the [CoreWebView2.HistoryChanged](corewebview2.md#historychanged) and [CoreWebView2.NavigationCompleted](corewebview2.md#navigationcompleted) events.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2ContentLoadingEventArgs](corewebview2contentloadingeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ContentLoadingEventArgs](corewebview2contentloadingeventargs.md)&gt;
 
 ### ContextMenuRequested
 
 ContextMenuRequested is raised when a context menu is requested by the user and the content inside WebView hasn't disabled context menus.
 The host has the option to create their own context menu with the information provided in the event or can add items to or remove items from WebView context menu. If the host doesn't handle the event, WebView will display the default context menu.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2ContextMenuRequestedEventArgs](corewebview2contextmenurequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ContextMenuRequestedEventArgs](corewebview2contextmenurequestedeventargs.md)&gt;
 
 ### DOMContentLoaded
 
 DOMContentLoaded is raised when the initial HTML document has been parsed.
 This aligns with the the document's DOMContentLoaded event in HTML.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2DOMContentLoadedEventArgs](corewebview2domcontentloadedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2DOMContentLoadedEventArgs](corewebview2domcontentloadedeventargs.md)&gt;
 
 ### DocumentTitleChanged
 
 DocumentTitleChanged is raised when the [CoreWebView2.DocumentTitle](corewebview2.md#documenttitle) property changes and may be raised before or after the [CoreWebView2.NavigationCompleted](corewebview2.md#navigationcompleted) event.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### DownloadStarting
 
 DownloadStarting is raised when a download has begun, blocking the default download dialog, but not blocking the progress of the download.
 The host can choose to cancel a download, change the result file path, and hide the default download dialog. If download is not handled or canceled, the download is saved to the default path after the event completes with default download dialog shown.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2DownloadStartingEventArgs](corewebview2downloadstartingeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2DownloadStartingEventArgs](corewebview2downloadstartingeventargs.md)&gt;
 
 ### FaviconChanged
 
 Raised when the Favicon has changed. This can include when a new page is loaded and thus by default no icon is set or the icon is set for the page by DOM or JavaScript.
 The first argument is the Webview2 which saw the changed Favicon and the second is null.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### FrameCreated
 
 FrameCreated is raised when a new iframe is created. Handle this event to get access to [CoreWebView2Frame](corewebview2frame.md) objects.
 Use the [CoreWebView2Frame.Destroyed](corewebview2frame.md#destroyed) to listen for when this iframe goes away.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2FrameCreatedEventArgs](corewebview2framecreatedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2FrameCreatedEventArgs](corewebview2framecreatedeventargs.md)&gt;
 
 ### FrameNavigationCompleted
 
 FrameNavigationCompleted is raised when a child frame has completely loaded (`body.onload` has been raised) or loading stopped with error.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2NavigationCompletedEventArgs](corewebview2navigationcompletedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2NavigationCompletedEventArgs](corewebview2navigationcompletedeventargs.md)&gt;
 
 ### FrameNavigationStarting
 
 FrameNavigationStarting is raised when a child frame in the WebView requests permission to navigate to a different URI.
 Redirects raise this operation as well, and the navigation id is the same as the original one. You may block corresponding navigations until the event handler returns.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2NavigationStartingEventArgs](corewebview2navigationstartingeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2NavigationStartingEventArgs](corewebview2navigationstartingeventargs.md)&gt;
 
 ### HistoryChanged
 
 HistoryChanged is raised for changes to joint session history, which consists of top-level and manual frame navigations.
 Use HistoryChanged to verify that the [CoreWebView2.CanGoBack](corewebview2.md#cangoback) or [CoreWebView2.CanGoForward](corewebview2.md#cangoforward) value has changed. HistoryChanged is also raised for using [CoreWebView2.GoBack](corewebview2.md#goback) or [CoreWebView2.GoForward](corewebview2.md#goforward). HistoryChanged is raised after [CoreWebView2.SourceChanged](corewebview2.md#sourcechanged) and [CoreWebView2.ContentLoading](corewebview2.md#contentloading). CanGoBack is false for navigations initiated through CoreWebView2Frame APIs if there has not yet been a user gesture.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### IsDefaultDownloadDialogOpenChanged
 
 Raised when the [CoreWebView2.IsDefaultDownloadDialogOpen](corewebview2.md#isdefaultdownloaddialogopen) property changes.
 This event comes after the [CoreWebView2.DownloadStarting](corewebview2.md#downloadstarting) event. Setting the [CoreWebView2DownloadStartingEventArgs.Handled](corewebview2downloadstartingeventargs.md#handled) property disables the default download dialog and ensures that this event is never raised.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### IsDocumentPlayingAudioChanged
 
 IsDocumentPlayingAudioChanged is raised when document starts or stops playing audio.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### IsMutedChanged
 
 IsMutedChanged is raised when the mute state changes.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### LaunchingExternalUriScheme
 
@@ -1012,20 +1110,20 @@ If a setting on the [CoreWebView2Settings](corewebview2settings.md) interface ha
 The WebView2 may not display the default dialog based on user settings, browser settings, and whether the origin is determined as a [trustworthy origin](https://w3c.github.io/webappsec-secure-contexts#potentially-trustworthy-origin); however, the event will still be raised.
 If the request is initiated by a cross-origin frame without a user gesture, the request will be blocked and the `LaunchingExternalUriScheme` event will not be raised. A URI scheme may be blocked for safety reasons. In this case the `LaunchingExternalUriScheme` event will not be raised. The default dialog may show an "always allow" checkbox which allows the user to opt-in to relaxed security (i.e. skipping future default dialogs) for the combination of the URI scheme and the origin of the page initiating this external URI scheme launch. The checkbox is offered so long as the group policy to show the checkbox is not explicitly disabled and there is a trustworthy initiating origin. If the user has checked this box, future attempts to launch this URI scheme will still raise the event.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2LaunchingExternalUriSchemeEventArgs](corewebview2launchingexternalurischemeeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2LaunchingExternalUriSchemeEventArgs](corewebview2launchingexternalurischemeeventargs.md)&gt;
 
 ### NavigationCompleted
 
 NavigationCompleted is raised when the WebView has completely loaded (`body.onload` has been raised) or loading stopped with error.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2NavigationCompletedEventArgs](corewebview2navigationcompletedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2NavigationCompletedEventArgs](corewebview2navigationcompletedeventargs.md)&gt;
 
 ### NavigationStarting
 
 NavigationStarting is raised when the WebView main frame is requesting permission to navigate to a different URI.
 Redirects raise this event as well, and the navigation id is the same as the original one. You may block corresponding navigations until the event handler returns.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2NavigationStartingEventArgs](corewebview2navigationstartingeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2NavigationStartingEventArgs](corewebview2navigationstartingeventargs.md)&gt;
 
 ### NewWindowRequested
 
@@ -1037,20 +1135,20 @@ If a deferral is not taken on the event args, scripts that resulted in the new w
 On Hololens 2, if the [CoreWebView2NewWindowRequestedEventArgs.NewWindow](corewebview2newwindowrequestedeventargs.md#newwindow) property is not set and the [CoreWebView2NewWindowRequestedEventArgs.Handled](corewebview2newwindowrequestedeventargs.md#handled) property is not set to `true`, the WebView2 will navigate to the [CoreWebView2NewWindowRequestedEventArgs.Uri](corewebview2newwindowrequestedeventargs.md#uri).
 If either of these properties are set, the WebView2 will not navigate to the [CoreWebView2NewWindowRequestedEventArgs.Uri](corewebview2newwindowrequestedeventargs.md#uri) and the the [CoreWebView2.NewWindowRequested](corewebview2.md#newwindowrequested) event will continue as normal.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2NewWindowRequestedEventArgs](corewebview2newwindowrequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2NewWindowRequestedEventArgs](corewebview2newwindowrequestedeventargs.md)&gt;
 
 ### NotificationReceived
 
 NotificationReceived is raised when a non-persistent notification is received.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2NotificationReceivedEventArgs](corewebview2notificationreceivedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2NotificationReceivedEventArgs](corewebview2notificationreceivedeventargs.md)&gt;
 
 ### PermissionRequested
 
 PermissionRequested is raised when content in a WebView requests permission to access some privileged resources.
 If a deferral is not taken on the event args, the subsequent scripts are blocked until the event handler returns. If a deferral is taken, the scripts are blocked until the deferral is completed.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2PermissionRequestedEventArgs](corewebview2permissionrequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2PermissionRequestedEventArgs](corewebview2permissionrequestedeventargs.md)&gt;
 
 ### ProcessFailed
 
@@ -1065,14 +1163,14 @@ Unresponsiveness | The process indicated by the event args has become unresponsi
 
 Your application can use [CoreWebView2ProcessFailedEventArgs](corewebview2processfailedeventargs.md) to identify which condition and process the event is for, and to collect diagnostics and handle recovery if necessary. For more details about which cases need to be handled by your application, see [CoreWebView2ProcessFailedKind](corewebview2processfailedkind.md).
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2ProcessFailedEventArgs](corewebview2processfailedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ProcessFailedEventArgs](corewebview2processfailedeventargs.md)&gt;
 
 ### SaveAsUIShowing
 
 SaveAsUIShowing is raised when browser trys to open a save as dialog. It includes opening dialog manually from context menu or programmatically from [CoreWebView2.ShowSaveAsUIAsync](corewebview2.md#showsaveasuiasync).
 
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2SaveAsUIShowingEventArgs](corewebview2saveasuishowingeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2SaveAsUIShowingEventArgs](corewebview2saveasuishowingeventargs.md)&gt;
 
 ### SaveFileSecurityCheckStarting
 
@@ -1086,14 +1184,14 @@ False | False | Perform the default policy check. It may show the security warni
 False | True | Skip the default policy check and the possible security warning. Start saving or downloading.
 True | Any | Skip the default policy check and the possible security warning. Abort save or download.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2SaveFileSecurityCheckStartingEventArgs](corewebview2savefilesecuritycheckstartingeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2SaveFileSecurityCheckStartingEventArgs](corewebview2savefilesecuritycheckstartingeventargs.md)&gt;
 
 ### ScreenCaptureStarting
 
 ScreenCaptureStarting event is raised when the [Screen Capture API](https://www.w3.org/TR/screen-capture/) is requested by the user using getDisplayMedia().
 If a deferral is not taken on the event args, the subsequent scripts are blocked until the event handler returns. If a deferral is taken, the scripts are blocked until the deferral is completed.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2ScreenCaptureStartingEventArgs](corewebview2screencapturestartingeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ScreenCaptureStartingEventArgs](corewebview2screencapturestartingeventargs.md)&gt;
 
 ### ScriptDialogOpening
 
@@ -1102,7 +1200,7 @@ This event only is raised if the [CoreWebView2Settings.AreDefaultScriptDialogsEn
 
 If a deferral is not taken on the event args, the subsequent scripts are blocked until the event handler returns. If a deferral is taken, the scripts are blocked until the deferral is completed.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2ScriptDialogOpeningEventArgs](corewebview2scriptdialogopeningeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ScriptDialogOpeningEventArgs](corewebview2scriptdialogopeningeventargs.md)&gt;
 
 ### ServerCertificateErrorDetected
 
@@ -1125,14 +1223,14 @@ WebView2 caches the response when action is [CoreWebView2ServerCertificateErrorA
 
 To raise the event again you must clear the cache using [CoreWebView2.ClearServerCertificateErrorActionsAsync](corewebview2.md#clearservercertificateerroractionsasync).
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2ServerCertificateErrorDetectedEventArgs](corewebview2servercertificateerrordetectedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ServerCertificateErrorDetectedEventArgs](corewebview2servercertificateerrordetectedeventargs.md)&gt;
 
 ### SourceChanged
 
 SourceChanged is raised when the [CoreWebView2.Source](corewebview2.md#source) property changes.
 SourceChanged is raised when navigating to a different site or fragment navigations. It is not raised for other types of navigations such as page refreshes or `history.pushState` with the same URL as the current page. This event is raised before [CoreWebView2.ContentLoading](corewebview2.md#contentloading) for navigation to a new document.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2SourceChangedEventArgs](corewebview2sourcechangedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2SourceChangedEventArgs](corewebview2sourcechangedeventargs.md)&gt;
 
 ### StatusBarTextChanged
 
@@ -1140,7 +1238,7 @@ StatusBarTextChanged event is raised when the text in the [Window.statusbar](htt
 Events which cause causes can be anything from hover, url events, and others. There is not a finite list on how to cause the statusbar to change.
 The developer must create the status bar and set the text.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 ### WebMessageReceived
 
@@ -1153,7 +1251,7 @@ chrome.webview.postMessage("message");
 window.open();
 then the [CoreWebView2.NewWindowRequested](corewebview2.md#newwindowrequested) event might be fired before the `WebMessageReceived` event. If you need the `WebMessageReceived` event to happen before anything else, then in the `WebMessageReceived` handler you can post a message back to the page and have the page wait until it receives that message before continuing.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2WebMessageReceivedEventArgs](corewebview2webmessagereceivedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2WebMessageReceivedEventArgs](corewebview2webmessagereceivedeventargs.md)&gt;
 
 ### WebResourceRequested
 
@@ -1165,7 +1263,7 @@ If this event is subscribed in the [CoreWebView2.NewWindowRequested](corewebview
 
 This event is by default raised for file, http, and https URI schemes. This is also raised for registered custome URI schemes. See [CoreWebView2CustomSchemeRegistration](corewebview2customschemeregistration.md) for more details.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2WebResourceRequestedEventArgs](corewebview2webresourcerequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2WebResourceRequestedEventArgs](corewebview2webresourcerequestedeventargs.md)&gt;
 
 ### WebResourceResponseReceived
 
@@ -1173,7 +1271,7 @@ WebResourceResponseReceived is raised when the WebView receives the response for
 The host app can use this event to view the actual request and response for a web resource. There is no guarantee about the order in which the WebView processes the response and the host app's handler runs. The app's handler will not block the WebView from processing the response.
 The event args include the [CoreWebView2WebResourceRequest](corewebview2webresourcerequest.md) as sent by the wire and [CoreWebView2WebResourceResponse](corewebview2webresourceresponse.md) received, including any additional headers added by the network stack that were not be included as part of the associated [CoreWebView2.WebResourceRequested](corewebview2.md#webresourcerequested) event, such as Authentication headers.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), [CoreWebView2WebResourceResponseReceivedEventArgs](corewebview2webresourceresponsereceivedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2WebResourceResponseReceivedEventArgs](corewebview2webresourceresponsereceivedeventargs.md)&gt;
 
 ### WindowCloseRequested
 
@@ -1181,7 +1279,7 @@ WindowCloseRequested is raised when content inside the WebView requested to clos
 The app should close the WebView and related app window if that makes sense to the app.
 After the first window.close() call, this event may not fire for any immediate back to back window.close() calls.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2](corewebview2.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
 
 

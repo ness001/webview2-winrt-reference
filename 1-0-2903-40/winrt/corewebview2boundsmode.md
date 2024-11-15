@@ -1,15 +1,19 @@
 ---
+description: Mode for how the CoreWebView2Controller.Bounds property is interpreted in relation to the CoreWebView2Controller.RasterizationScale property.
 title: CoreWebView2BoundsMode
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2BoundsMode
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2BoundsMode
 ---
 
-# enum CoreWebView2BoundsMode
+# CoreWebView2BoundsMode Enum
 
 Mode for how the [CoreWebView2Controller.Bounds](corewebview2controller.md#bounds) property is interpreted in relation to the [CoreWebView2Controller.RasterizationScale](corewebview2controller.md#rasterizationscale) property.
 

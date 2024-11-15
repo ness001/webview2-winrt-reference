@@ -1,15 +1,31 @@
 ---
+description: This class is an extension of the CoreWebView2Controller class to support visual hosting.
 title: CoreWebView2CompositionController
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2CompositionController
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2CompositionController
+- CoreWebView2CompositionController.Cursor
+- CoreWebView2CompositionController.RootVisualTarget
+- CoreWebView2CompositionController.DragEnter
+- CoreWebView2CompositionController.DragLeave
+- CoreWebView2CompositionController.DragOver
+- CoreWebView2CompositionController.Drop
+- CoreWebView2CompositionController.GetNonClientRegionAtPoint
+- CoreWebView2CompositionController.QueryNonClientRegion
+- CoreWebView2CompositionController.SendMouseInput
+- CoreWebView2CompositionController.SendPointerInput
+- CoreWebView2CompositionController.CursorChanged
+- CoreWebView2CompositionController.NonClientRegionChanged
 ---
 
-# runtimeClass CoreWebView2CompositionController
+# CoreWebView2CompositionController Class
 
 Extends: [CoreWebView2Controller](corewebview2controller.md)
 
@@ -135,11 +151,11 @@ The event is raised when WebView thinks the cursor should be changed.
 For example, when the mouse cursor is currently the default cursor but is then moved over text, it may try to change to the IBeam cursor.
 It is expected for the developer to send [CoreWebView2MouseEventKind](corewebview2mouseeventkind.md).Leave messages (in addition to [CoreWebView2MouseEventKind](corewebview2mouseeventkind.md).Move messages) through [CoreWebView2CompositionController.SendMouseInput](corewebview2compositioncontroller.md#sendmouseinput). This is to ensure that the mouse is actually within the WebView that sends out CursorChanged events.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2CompositionController, Object&gt;
 
 ### NonClientRegionChanged
 
 This event is raised when elements on the page with "app-region" CSS property values corresponding to non-client regions change. Use the [CoreWebView2NonClientRegionChangedEventArgs.RegionKind](corewebview2nonclientregionchangedeventargs.md#regionkind) to see the kind of non-client region that changed.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md), [CoreWebView2NonClientRegionChangedEventArgs](corewebview2nonclientregionchangedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2CompositionController, [CoreWebView2NonClientRegionChangedEventArgs](corewebview2nonclientregionchangedeventargs.md)&gt;
 

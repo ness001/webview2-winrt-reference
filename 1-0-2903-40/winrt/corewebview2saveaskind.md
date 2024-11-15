@@ -1,15 +1,19 @@
 ---
+description: Specifies CoreWebView2SaveAsUIShowingEventArgs.Kind selection options.
 title: CoreWebView2SaveAsKind
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2SaveAsKind
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2SaveAsKind
 ---
 
-# enum CoreWebView2SaveAsKind
+# CoreWebView2SaveAsKind Enum
 
 Specifies [CoreWebView2SaveAsUIShowingEventArgs.Kind](corewebview2saveasuishowingeventargs.md#kind) selection options.
 For HTML documents, we support 3 Save As kinds: HtmlOnly, SingleFile and Complete. For non-HTML documents, you must use Default. MIME types of `text/html` and `application/xhtml+xml` are considered HTML documents.

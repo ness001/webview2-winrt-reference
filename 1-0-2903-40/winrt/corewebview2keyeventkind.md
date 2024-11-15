@@ -1,15 +1,19 @@
 ---
+description: Specifies the key event kind that raises an CoreWebView2Controller.AcceleratorKeyPressed event.
 title: CoreWebView2KeyEventKind
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2KeyEventKind
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2KeyEventKind
 ---
 
-# enum CoreWebView2KeyEventKind
+# CoreWebView2KeyEventKind Enum
 
 Specifies the key event kind that raises an [CoreWebView2Controller.AcceleratorKeyPressed](corewebview2controller.md#acceleratorkeypressed) event.
 

@@ -1,15 +1,19 @@
 ---
+description: Mouse event virtual keys associated with a CoreWebView2MouseEventKind for CoreWebView2CompositionController.SendMouseInput.
 title: CoreWebView2MouseEventVirtualKeys
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 11/12/2024
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2MouseEventVirtualKeys
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2MouseEventVirtualKeys
 ---
 
-# enum CoreWebView2MouseEventVirtualKeys
+# CoreWebView2MouseEventVirtualKeys Enum
 
 Mouse event virtual keys associated with a [CoreWebView2MouseEventKind](corewebview2mouseeventkind.md) for [CoreWebView2CompositionController.SendMouseInput](corewebview2compositioncontroller.md#sendmouseinput).
 
