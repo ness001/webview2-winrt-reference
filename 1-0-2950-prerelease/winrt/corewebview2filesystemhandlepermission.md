@@ -1,5 +1,5 @@
 ---
-description: 
+description: Allowed permissions of CoreWebView2FileSystemHandle as described in FileSystemHandle.requestPermission()
 title: CoreWebView2FileSystemHandlePermission
 ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2FileSystemHandlePermission
@@ -15,10 +15,12 @@ api_name:
 
 # CoreWebView2FileSystemHandlePermission Enum
 
+Allowed permissions of [CoreWebView2FileSystemHandle](corewebview2filesystemhandle.md) as described in [FileSystemHandle.requestPermission()](https://developer.mozilla.org/docs/Web/API/FileSystemHandle/requestPermission)
+
 | Name |  Value | Description |
 |--|--|--|
-|`ReadOnly` | 0x0  |  |
-|`ReadWrite` | 0x1  |  |
+|`ReadOnly` | 0x0  |  Read-only permission for FileSystemHandle|
+|`ReadWrite` | 0x1  |  Read and write permissions for FileSystemHandle|
 
 
 ## Referenced by

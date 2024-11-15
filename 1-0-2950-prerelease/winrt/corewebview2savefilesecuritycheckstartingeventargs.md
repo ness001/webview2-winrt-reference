@@ -1,5 +1,5 @@
 ---
-description: 
+description: Event args for the CoreWebView2.SaveFileSecurityCheckStarting event.
 title: CoreWebView2SaveFileSecurityCheckStartingEventArgs
 ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2SaveFileSecurityCheckStartingEventArgs
@@ -23,16 +23,18 @@ api_name:
 
 
 
+Event args for the [CoreWebView2.SaveFileSecurityCheckStarting](corewebview2.md#savefilesecuritycheckstarting) event.
+
 ## Summary
 
 Members|Description
 --|--
-[CancelSave](#cancelsave) | 
-[DocumentOriginUri](#documentoriginuri) | 
-[FileExtension](#fileextension) | 
-[FilePath](#filepath) | 
-[SuppressDefaultPolicy](#suppressdefaultpolicy) | 
-[GetDeferral](#getdeferral) | 
+[CancelSave](#cancelsave) | Set if cancel the upcoming save/download.
+[DocumentOriginUri](#documentoriginuri) | Get the document origin URI of this file save operation.
+[FileExtension](#fileextension) | Get the extension of file to be saved.
+[FilePath](#filepath) | Get the full path of file to be saved. This includes the file name and extension.
+[SuppressDefaultPolicy](#suppressdefaultpolicy) | Set if the default policy checking and security warning will be suppressed.
+[GetDeferral](#getdeferral) | Returns a Deferral object.
 
 ## Properties
 
@@ -40,21 +42,31 @@ Members|Description
 
 >  bool CancelSave
 
+Set if cancel the upcoming save/download.
+
 ### DocumentOriginUri
 
 > readonly  string DocumentOriginUri
+
+Get the document origin URI of this file save operation.
 
 ### FileExtension
 
 > readonly  string FileExtension
 
+Get the extension of file to be saved.
+
 ### FilePath
 
 > readonly  string FilePath
 
+Get the full path of file to be saved. This includes the file name and extension.
+
 ### SuppressDefaultPolicy
 
 >  bool SuppressDefaultPolicy
+
+Set if the default policy checking and security warning will be suppressed.
 
 
 
@@ -63,6 +75,10 @@ Members|Description
 ### GetDeferral
 
 > [Deferral](/uwp/api/Windows.Foundation.Deferral) GetDeferral()
+
+Returns a Deferral object.
+It will put the event into a deferred state. The default policy checking and any default UI will be blocked temporarily, saving file to local won't start, until the deferral is completed.
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 
+description: The ScrollBar style being set during environment creation.
 title: CoreWebView2ScrollbarStyle
 ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ScrollbarStyle
@@ -15,10 +15,12 @@ api_name:
 
 # CoreWebView2ScrollbarStyle Enum
 
+The ScrollBar style being set during environment creation.
+
 | Name |  Value | Description |
 |--|--|--|
-|`Default` | 0x0  |  |
-|`FluentOverlay` | 0x1  |  |
+|`Default` | 0x0  |  Browser default ScrollBar style|
+|`FluentOverlay` | 0x1  |  Window style fluent overlay scroll bar. Please see [Fluent UI](https://developer.microsoft.com/fluentui#/) for more details on fluent UI.|
 
 
 ## Referenced by

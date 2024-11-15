@@ -1,5 +1,5 @@
 ---
-description: 
+description: Representation of a DOM FileSystemHandle object.
 title: CoreWebView2FileSystemHandle
 ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2FileSystemHandle
@@ -20,13 +20,15 @@ api_name:
 
 
 
+Representation of a DOM [FileSystemHandle](https://developer.mozilla.org/docs/Web/API/FileSystemHandle) object.
+
 ## Summary
 
 Members|Description
 --|--
-[Kind](#kind) | 
-[Path](#path) | 
-[Permission](#permission) | 
+[Kind](#kind) | The kind of the FileSystemHandle. It can either be a file or a directory.
+[Path](#path) | The path to the FileSystemHandle.
+[Permission](#permission) | The permissions granted to the FileSystemHandle.
 
 ## Properties
 
@@ -34,13 +36,19 @@ Members|Description
 
 > readonly  [CoreWebView2FileSystemHandleKind](corewebview2filesystemhandlekind.md) Kind
 
+The kind of the FileSystemHandle. It can either be a file or a directory.
+
 ### Path
 
 > readonly  string Path
 
+The path to the FileSystemHandle.
+
 ### Permission
 
 > readonly  [CoreWebView2FileSystemHandlePermission](corewebview2filesystemhandlepermission.md) Permission
+
+The permissions granted to the FileSystemHandle.
 
 
 

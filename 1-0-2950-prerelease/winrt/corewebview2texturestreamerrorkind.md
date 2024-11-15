@@ -1,5 +1,5 @@
 ---
-description: 
+description: Error info with enum value.
 title: CoreWebView2TextureStreamErrorKind
 ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2TextureStreamErrorKind
@@ -15,11 +15,14 @@ api_name:
 
 # CoreWebView2TextureStreamErrorKind Enum
 
+Error info with enum value.
+
 | Name |  Value | Description |
 |--|--|--|
-|`NoVideoTrackStarted` | 0x0  |  |
-|`TextureError` | 0x1  |  |
-|`TextureInUse` | 0x2  |  |
+|`NoVideoTrackStarted` | 0x0  |  An error that texture stream is not active.
+|
+|`TextureError` | 0x1  |  An error that is associated with the texture.|
+|`TextureInUse` | 0x2  |  An error that presenting texture is already in use.|
 
 
 ## Referenced by

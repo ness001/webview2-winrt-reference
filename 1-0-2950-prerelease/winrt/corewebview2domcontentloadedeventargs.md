@@ -1,5 +1,5 @@
 ---
-description: 
+description: Event args for the CoreWebView2.DOMContentLoaded event.
 title: CoreWebView2DOMContentLoadedEventArgs
 ms.date: 11/15/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DOMContentLoadedEventArgs
@@ -18,17 +18,21 @@ api_name:
 
 
 
+Event args for the [CoreWebView2.DOMContentLoaded](corewebview2.md#domcontentloaded) event.
+
 ## Summary
 
 Members|Description
 --|--
-[NavigationId](#navigationid) | 
+[NavigationId](#navigationid) | Gets the ID of the navigation.
 
 ## Properties
 
 ### NavigationId
 
 > readonly  uint64_t NavigationId
+
+Gets the ID of the navigation.
 
 
 
