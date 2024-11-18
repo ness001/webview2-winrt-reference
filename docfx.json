@@ -27,7 +27,7 @@
         ],
         "src": "non-version"
       },
-	  { "files": ["*.md"], "group": "webview2-2903-40", "src": "1-0-2903-40/interop", "dest": "interop" },
+      { "files": ["*.md"], "group": "webview2-2903-40", "src": "1-0-2903-40/interop", "dest": "interop" },
       { "files": ["*.md"], "group": "webview2-2903-40", "src": "1-0-2903-40/winrt", "dest": "microsoft_web_webview2_core" },
       { "files": ["**/*.yml"], "group": "webview2-2903-40", "src": "1-0-2903-40" },
       { "files": ["*.md"], "group": "webview2-2849-39", "src": "1-0-2849-39/interop", "dest": "interop" },
